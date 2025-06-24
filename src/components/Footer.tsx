@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Footer: React.FC = () => {
   return (
@@ -24,25 +25,33 @@ const Footer: React.FC = () => {
           ></div>
 
           <p>
-            <a
+            <Link
               href="https://arizonagestionenergy.com/sample-page/"
+              target="_blank"
+              rel="noopener noreferrer"
               data-type="link"
               data-id="https://arizonagestionenergy.com/sample-page/"
             >
               Aviso legal
-            </a>{" "}
+            </Link>{" "}
             {" | "}{" "}
-            <a
+            <Link
               href="https://arizonagestionenergy.com/privacy-policy/"
+              target="_blank"
+              rel="noopener noreferrer"
               data-type="link"
               data-id="https://arizonagestionenergy.com/privacy-policy/"
             >
               Política de privacidad
-            </a>{" "}
+            </Link>{" "}
             {" | "}{" "}
-            <a href="https://arizonagestionenergy.com/politica-de-cookies/">
+            <Link
+              href="https://arizonagestionenergy.com/politica-de-cookies/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Política de cookies
-            </a>
+            </Link>
           </p>
         </div>
       </div>

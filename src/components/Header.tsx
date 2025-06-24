@@ -100,54 +100,59 @@ const Header: React.FC = () => {
                     >
                       <ul className="wp-block-navigation__container is-responsive items-justified-right wp-block-navigation">
                         <li className="wp-block-navigation-item wp-block-navigation-link">
-                          <a
+                          <Link
                             className="wp-block-navigation-item__content"
-                            href="https://arizonagestionenergy.com/sobre/"
+                            href="/sobre"
+                            rel="noopener noreferrer"
                           >
                             <span className="wp-block-navigation-item__label">
                               <strong>Quiénes somos</strong>
                             </span>
-                          </a>
+                          </Link>
                         </li>
                         <li className="wp-block-navigation-item wp-block-navigation-link">
-                          <a
+                          <Link
                             className="wp-block-navigation-item__content"
-                            href="https://arizonagestionenergy.com/equipo/"
+                            href="/equipo"
+                            rel="noopener noreferrer"
                           >
                             <span className="wp-block-navigation-item__label">
                               <strong>Equipo</strong>
                             </span>
-                          </a>
+                          </Link>
                         </li>
                         <li className="wp-block-navigation-item wp-block-navigation-link">
-                          <a
+                          <Link
                             className="wp-block-navigation-item__content"
-                            href="https://arizonagestionenergy.com/servicios/"
+                            href="/servicios"
+                            rel="noopener noreferrer"
                           >
                             <span className="wp-block-navigation-item__label">
                               <strong>Servicios</strong>
                             </span>
-                          </a>
+                          </Link>
                         </li>
                         <li className="wp-block-navigation-item wp-block-navigation-link">
-                          <a
+                          <Link
                             className="wp-block-navigation-item__content"
-                            href="https://arizonagestionenergy.com/noticias/"
+                            href="/noticias"
+                            rel="noopener noreferrer"
                           >
                             <span className="wp-block-navigation-item__label">
                               <strong>Noticias</strong>
                             </span>
-                          </a>
+                          </Link>
                         </li>
                         <li className="wp-block-navigation-item wp-block-navigation-link">
-                          <a
+                          <Link
                             className="wp-block-navigation-item__content"
-                            href="https://arizonagestionenergy.com/contacto/"
+                            href="/contacto"
+                            rel="noopener noreferrer"
                           >
                             <span className="wp-block-navigation-item__label">
                               <strong>Contacto</strong>
                             </span>
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
