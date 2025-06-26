@@ -181,20 +181,20 @@ const Header: React.FC = () => {
             </svg>
           </button>
         </div>
-        <nav className="flex flex-col items-end space-y-6 pr-8 pt-8 text-lg decoration-none font-semibold">
-          <Link href="/sobre" className="decoration-none" onClick={() => setIsMenuOpen(false)}>
+        <nav className="flex flex-col items-end space-y-6 pr-8 pt-8 text-lg !decoration-none font-semibold">
+          <Link href="/sobre" className="!no-underline" onClick={() => setIsMenuOpen(false)}>
             Quiénes somos
           </Link>
-          <Link href="/equipo" className="decoration-none" onClick={() => setIsMenuOpen(false)}>
+          <Link href="/equipo" className="!no-underline" onClick={() => setIsMenuOpen(false)}>
             Equipo
           </Link>
-          <Link href="/servicios" className="decoration-none" onClick={() => setIsMenuOpen(false)}>
+          <Link href="/servicios" className="!no-underline" onClick={() => setIsMenuOpen(false)}>
             Servicios
           </Link>
-          <Link href="/noticias" className="decoration-none" onClick={() => setIsMenuOpen(false)}>
+          <Link href="/noticias" className="!no-underline" onClick={() => setIsMenuOpen(false)}>
             Noticias
           </Link>
-          <Link href="/contacto" className="decoration-none" onClick={() => setIsMenuOpen(false)}>
+          <Link href="/contacto" className="!no-underline" onClick={() => setIsMenuOpen(false)}>
             Contacto
           </Link>
         </nav>

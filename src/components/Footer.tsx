@@ -12,11 +12,9 @@ const Footer: React.FC = () => {
         }}
       >
         <div className="wp-block-group alignwide is-content-justification-left is-nowrap is-layout-flex wp-container-core-group-is-layout-17 wp-block-group-is-layout-flex">
-          <p className="has-text-align-center">
+          <p className="has-text-align-center !w-[500px]">
             © 2024 Arizona Gestión Energy S.L.
           </p>
-
-          <hr className="wp-block-separator has-alpha-channel-opacity is-style-wide" />
 
           <div
             style={{ height: "100px", width: "403px" }}
@@ -24,7 +22,7 @@ const Footer: React.FC = () => {
             className="wp-block-spacer wp-container-content-1"
           ></div>
 
-          <p>
+          <p className="!text-wrap">
             <Link
               href="https://arizonagestionenergy.com/sample-page/"
               target="_blank"
