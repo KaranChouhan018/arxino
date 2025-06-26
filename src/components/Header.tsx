@@ -1,10 +1,11 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 const Header: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <header className="wp-block-template-part">
       <div
@@ -51,10 +52,8 @@ const Header: React.FC = () => {
                 aria-haspopup="dialog"
                 aria-label="Abrir el menú"
                 className="wp-block-navigation__responsive-container-open"
-                // The following data-wp-* attributes are for WP interactivity, not needed in React/Next
-                // data-wp-on-async--click="actions.openMenuOnClick"
-                // data-wp-on--keydown="actions.handleMenuKeydown"
                 type="button"
+                onClick={() => setIsMenuOpen(true)}
               >
                 <svg
                   width="24"
@@ -80,7 +79,8 @@ const Header: React.FC = () => {
                   <div className="wp-block-navigation__responsive-dialog">
                     <button
                       aria-label="Cerrar el menú"
-                      className="wp-block-navigation__responsive-container-close"
+                      className="wp-block-navigation__responsive-container-close sm:hidden"
+                      onClick={() => setIsMenuOpen(true)}
                       type="button"
                     >
                       <svg
@@ -162,6 +162,42 @@ const Header: React.FC = () => {
             </nav>
           </div>
         </div>
+      </div>
+      {/* Mobile Slide-In Menu */}
+      <div
+        className={`fixed inset-0 z-50 bg-white transform ${
+          isMenuOpen ? "translate-x-0" : "translate-x-full"
+        } transition-transform duration-300 ease-in-out sm:hidden`}
+      >
+        <div className="flex justify-end p-4">
+          <button
+            onClick={() => setIsMenuOpen(false)}
+            aria-label="Cerrar menú"
+          >
+            {/* Inline SVG for X icon */}
+            <svg  fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"   width="24"
+                        height="24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <nav className="flex flex-col items-end space-y-6 pr-8 pt-8 text-lg decoration-none font-semibold">
+          <Link href="/sobre" className="decoration-none" onClick={() => setIsMenuOpen(false)}>
+            Quiénes somos
+          </Link>
+          <Link href="/equipo" className="decoration-none" onClick={() => setIsMenuOpen(false)}>
+            Equipo
+          </Link>
+          <Link href="/servicios" className="decoration-none" onClick={() => setIsMenuOpen(false)}>
+            Servicios
+          </Link>
+          <Link href="/noticias" className="decoration-none" onClick={() => setIsMenuOpen(false)}>
+            Noticias
+          </Link>
+          <Link href="/contacto" className="decoration-none" onClick={() => setIsMenuOpen(false)}>
+            Contacto
+          </Link>
+        </nav>
       </div>
     </header>
   );
