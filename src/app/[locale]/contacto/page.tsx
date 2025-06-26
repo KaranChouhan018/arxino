@@ -2,12 +2,12 @@ import Footer from "@/src/components/Footer";
 import Header from "@/src/components/Header";
 import Image from "next/image";
 import React from "react";
-import {Link} from '@/src/i18n/routing';
-import {useTranslations} from 'next-intl';
+import { Link } from "@/src/i18n/routing";
+import { useTranslations } from "next-intl";
 
 const ContactPage: React.FC = () => {
-  const t = useTranslations('contact');
-  
+  const t = useTranslations("contact");
+
   return (
     <>
       <Header />
@@ -35,7 +35,7 @@ const ContactPage: React.FC = () => {
               className="wp-block-cover__background has-tertiary-background-color has-background-dim"
             />
             <div
-              className="wp-block-cover__image-background wp-image-128 has-parallax is-repeated"
+              className="wp-block-cover__image-background wp-image-128 has-parallax"
               style={{
                 backgroundPosition: "100% 55%",
                 backgroundImage:
@@ -56,7 +56,7 @@ const ContactPage: React.FC = () => {
                         marginBottom: "var(--wp--preset--spacing--30)",
                       }}
                     >
-                      <strong>{t('title')}</strong>
+                      <strong>{t("title")}</strong>
                     </h2>
                   </div>
                 </div>
@@ -86,7 +86,7 @@ const ContactPage: React.FC = () => {
                   data-object-fit="cover"
                 />
                 <div className="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
-                  <div className="wp-block-group alignfull is-vertical is-layout-flex wp-container-core-group-is-layout-30 wp-block-group-is-layout-flex">
+                  <div className="!flex-col !items-start wp-block-group alignfull is-vertical is-layout-flex wp-container-core-group-is-layout-30 wp-block-group-is-layout-flex">
                     <div className="wp-block-group is-vertical is-layout-flex wp-container-core-group-is-layout-27 wp-block-group-is-layout-flex">
                       <div className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
                         <div className="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-2 wp-block-columns-is-layout-flex">
@@ -113,7 +113,7 @@ const ContactPage: React.FC = () => {
                         >
                           <div className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
                             <h2
-                              className="wp-block-heading alignfull has-text-align-center has-foreground-color has-text-color has-link-color wp-elements-e970e3495aabc359804681c0b10cb2c3"
+                              className="wp-block-heading !text-nowrap alignfull has-text-align-center has-foreground-color has-text-color has-link-color wp-elements-e970e3495aabc359804681c0b10cb2c3"
                               style={{
                                 marginTop: "var(--wp--preset--spacing--50)",
                                 marginRight: "var(--wp--preset--spacing--30)",
@@ -126,7 +126,7 @@ const ContactPage: React.FC = () => {
                                 style={{ backgroundColor: "rgba(0, 0, 0, 0)" }}
                                 className="has-inline-color has-primary-color"
                               >
-                                {t('info_title')}
+                                {t("info_title")}
                               </mark>
                             </h2>
 
@@ -139,19 +139,21 @@ const ContactPage: React.FC = () => {
                                 <div className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
                                   <div className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
                                     {/* Address Section */}
-                                    <div className="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-13 wp-block-group-is-layout-flex">
+                                    <div className="!justify-start wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-13 wp-block-group-is-layout-flex">
                                       <div className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
                                         <figure className="wp-block-image alignleft size-full is-resized ext-aspect-landscape wp-duotone-rgb15133229-ffffff-3">
                                           <Image
                                             width={549}
                                             height={500}
-                                            src="https://www.shutterstock.com/image-vector/pin-point-logo-can-be-600nw-1679653036.jpg"
+                                            src="https://arizonagestionenergy.com/wp-content/uploads/2024/11/Icono-arizona-direccion-.png"
+                                            
                                             alt="Dirección icon"
                                             className="wp-image-205"
                                             style={{
                                               objectFit: "cover",
                                               width: "57px",
                                               height: "auto",
+                                              filter: "hue-rotate(200deg) saturate(2)",
                                             }}
                                           />
                                         </figure>
@@ -159,8 +161,8 @@ const ContactPage: React.FC = () => {
 
                                       <div className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
                                         <p className="has-primary-color has-text-color has-link-color has-small-font-size wp-elements-ff310899294439e3b4c509166ace9a2a">
-                                          <strong>{t('address')}. </strong>
-                                          {t('address_value')}
+                                          <strong>{t("address")}. </strong>
+                                          {t("address_value")}
                                         </p>
                                       </div>
                                     </div>
@@ -176,12 +178,12 @@ const ContactPage: React.FC = () => {
                                     <div className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
                                       {/* Phone Section */}
                                       <div className="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-18 wp-block-group-is-layout-flex">
-                                        <div className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+                                        <div className="!justify-start wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
                                           <figure className="wp-block-image alignleft size-full is-resized ext-aspect-landscape wp-duotone-unset-4">
                                             <Image
                                               width={512}
                                               height={512}
-                                              src="https://www.shutterstock.com/image-vector/phone-icon-vector-telephone-symbol-260nw-1723717453.jpg"
+                                              src="https://arizonagestionenergy.com/wp-content/uploads/2024/11/Icono-arizona-telefono.png"
                                               alt="Teléfono icon"
                                               className="wp-image-206"
                                               style={{
@@ -194,7 +196,7 @@ const ContactPage: React.FC = () => {
                                         </div>
 
                                         <p className="has-primary-color has-text-color has-link-color wp-elements-5f4b78846fc4b84276f710d8d0b5315f">
-                                          <strong>{t('phone')}</strong>.{" "}
+                                          <strong>{t("phone")}</strong>.{" "}
                                           <Link
                                             href="tel:+34608297125"
                                             className="hover:underline"
@@ -208,27 +210,29 @@ const ContactPage: React.FC = () => {
                                   </div>
 
                                   {/* Email Section */}
-                                  <div className="wp-block-group is-content-justification-left is-nowrap is-layout-flex wp-container-core-group-is-layout-21 wp-block-group-is-layout-flex">
+                                  <div className="!flex !items-center">
                                     <figure className="wp-block-image alignleft size-full is-resized ext-aspect-landscape wp-duotone-1f8cff-1c0a63-5">
                                       <Image
                                         width={512}
                                         height={512}
-                                        src="https://www.shutterstock.com/image-vector/phone-icon-vector-telephone-symbol-260nw-1723717453.jpg"
+                                        src="https://arizonagestionenergy.com/wp-content/uploads/2024/11/icono-arizona-email-3.png"
                                         alt="Email icon"
                                         className="wp-image-211"
                                         style={{
                                           objectFit: "cover",
                                           width: "57px",
                                           height: "auto",
+                                          filter: "invert(24%) sepia(98%) saturate(7492%) hue-rotate(202deg) brightness(97%) contrast(101%)",
+                                          // Removed filter to fix blue tint
                                         }}
                                       />
                                     </figure>
 
                                     <p
-                                      className="has-text-align-center has-primary-color has-text-color has-link-color wp-elements-6c93572ec24fe0b43d332b5c08c10edd"
+                                      className="has-text-align-center !mb-5 !text-nowrap has-primary-color has-text-color has-link-color wp-elements-6c93572ec24fe0b43d332b5c08c10edd"
                                       style={{ marginTop: "0px" }}
                                     >
-                                      <strong>{t('email')}.</strong>{" "}
+                                      <strong>{t("email")}.</strong>{" "}
                                       <Link
                                         href="mailto:administración@arizonagestionenergy.com"
                                         className="hover:underline"
@@ -278,7 +282,7 @@ const ContactPage: React.FC = () => {
                           className="has-small-font-size"
                           style={{ marginTop: "8px" }}
                         >
-                          {t('description')}
+                          {t("description")}
                         </p>
                       </div>
                     </div>

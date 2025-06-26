@@ -2,23 +2,23 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import {Link, usePathname} from '@/src/i18n/routing';
-import {useTranslations, useLocale} from 'next-intl';
-import { Globe } from 'lucide-react';
+import { Link, usePathname } from "@/src/i18n/routing";
+import { useTranslations, useLocale } from "next-intl";
+import { Globe } from "lucide-react";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
-  const t = useTranslations('navigation');
+  const t = useTranslations("navigation");
   const locale = useLocale();
   const pathname = usePathname();
 
   const languages = [
-    { code: 'es', name: 'Español', flag: '🇪🇸' },
-    { code: 'en', name: 'English', flag: '🇺🇸' }
+    { code: "es", name: "Español", flag: "🇪🇸" },
+    { code: "en", name: "English", flag: "🇺🇸" },
   ];
 
-  const currentLanguage = languages.find(lang => lang.code === locale);
+  const currentLanguage = languages.find((lang) => lang.code === locale);
 
   return (
     <header className="wp-block-template-part">
@@ -59,19 +59,31 @@ const Header: React.FC = () => {
           </div>
           <div className="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-4 wp-block-group-is-layout-flex">
             {/* Language Switcher */}
-            <div className="relative">
+            <div className="absolute right-12 top-5">
               <button
                 onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
                 className="flex items-center space-x-2 px-3 py-2 rounded-md hover:bg-gray-100 transition-colors"
                 aria-label="Change language"
               >
                 <Globe className="w-4 h-4" />
-                <span className="text-sm font-medium">{currentLanguage?.flag} {currentLanguage?.code.toUpperCase()}</span>
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                <span className="text-sm font-medium">
+                  {currentLanguage?.flag} {currentLanguage?.code.toUpperCase()}
+                </span>
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
                 </svg>
               </button>
-              
+
               {isLangMenuOpen && (
                 <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg border border-gray-200 z-50">
                   {languages.map((lang) => (
@@ -85,8 +97,16 @@ const Header: React.FC = () => {
                       <span className="mr-3">{lang.flag}</span>
                       <span>{lang.name}</span>
                       {locale === lang.code && (
-                        <svg className="w-4 h-4 ml-auto text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        <svg
+                          className="w-4 h-4 ml-auto text-blue-600"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clipRule="evenodd"
+                          />
                         </svg>
                       )}
                     </Link>
@@ -157,7 +177,7 @@ const Header: React.FC = () => {
                             rel="noopener noreferrer"
                           >
                             <span className="wp-block-navigation-item__label">
-                              <strong>{t('about')}</strong>
+                              <strong>{t("about")}</strong>
                             </span>
                           </Link>
                         </li>
@@ -168,7 +188,7 @@ const Header: React.FC = () => {
                             rel="noopener noreferrer"
                           >
                             <span className="wp-block-navigation-item__label">
-                              <strong>{t('team')}</strong>
+                              <strong>{t("team")}</strong>
                             </span>
                           </Link>
                         </li>
@@ -179,7 +199,7 @@ const Header: React.FC = () => {
                             rel="noopener noreferrer"
                           >
                             <span className="wp-block-navigation-item__label">
-                              <strong>{t('services')}</strong>
+                              <strong>{t("services")}</strong>
                             </span>
                           </Link>
                         </li>
@@ -190,7 +210,7 @@ const Header: React.FC = () => {
                             rel="noopener noreferrer"
                           >
                             <span className="wp-block-navigation-item__label">
-                              <strong>{t('news')}</strong>
+                              <strong>{t("news")}</strong>
                             </span>
                           </Link>
                         </li>
@@ -201,7 +221,7 @@ const Header: React.FC = () => {
                             rel="noopener noreferrer"
                           >
                             <span className="wp-block-navigation-item__label">
-                              <strong>{t('contact')}</strong>
+                              <strong>{t("contact")}</strong>
                             </span>
                           </Link>
                         </li>
@@ -228,9 +248,11 @@ const Header: React.FC = () => {
               className="flex items-center space-x-2 px-3 py-2 rounded-md hover:bg-gray-100 transition-colors"
             >
               <Globe className="w-4 h-4" />
-              <span className="text-sm font-medium">{currentLanguage?.flag} {currentLanguage?.code.toUpperCase()}</span>
+              <span className="text-sm font-medium">
+                {currentLanguage?.flag} {currentLanguage?.code.toUpperCase()}
+              </span>
             </button>
-            
+
             {isLangMenuOpen && (
               <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg border border-gray-200 z-50">
                 {languages.map((lang) => (
@@ -247,8 +269,16 @@ const Header: React.FC = () => {
                     <span className="mr-3">{lang.flag}</span>
                     <span>{lang.name}</span>
                     {locale === lang.code && (
-                      <svg className="w-4 h-4 ml-auto text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      <svg
+                        className="w-4 h-4 ml-auto text-blue-600"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clipRule="evenodd"
+                        />
                       </svg>
                     )}
                   </Link>
@@ -257,30 +287,59 @@ const Header: React.FC = () => {
             )}
           </div>
 
-          <button
-            onClick={() => setIsMenuOpen(false)}
-            aria-label="Cerrar menú"
-          >
-            <svg fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+          <button onClick={() => setIsMenuOpen(false)} aria-label="Cerrar menú">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
             </svg>
           </button>
         </div>
         <nav className="flex flex-col items-end space-y-6 pr-8 pt-8 text-lg !decoration-none font-semibold">
-          <Link href="/sobre" className="!no-underline" onClick={() => setIsMenuOpen(false)}>
-            {t('about')}
+          <Link
+            href="/sobre"
+            className="!no-underline"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            {t("about")}
           </Link>
-          <Link href="/equipo" className="!no-underline" onClick={() => setIsMenuOpen(false)}>
-            {t('team')}
+          <Link
+            href="/equipo"
+            className="!no-underline"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            {t("team")}
           </Link>
-          <Link href="/servicios" className="!no-underline" onClick={() => setIsMenuOpen(false)}>
-            {t('services')}
+          <Link
+            href="/servicios"
+            className="!no-underline"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            {t("services")}
           </Link>
-          <Link href="/noticias" className="!no-underline" onClick={() => setIsMenuOpen(false)}>
-            {t('news')}
+          <Link
+            href="/noticias"
+            className="!no-underline"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            {t("news")}
           </Link>
-          <Link href="/contacto" className="!no-underline" onClick={() => setIsMenuOpen(false)}>
-            {t('contact')}
+          <Link
+            href="/contacto"
+            className="!no-underline"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            {t("contact")}
           </Link>
         </nav>
       </div>

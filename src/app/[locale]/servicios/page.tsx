@@ -1,0 +1,596 @@
+import React from "react";
+import Header from "@/src/components/Header";
+import Footer from "@/src/components/Footer";
+import Image from "next/image";
+
+const page: React.FC = () => {
+  return (
+    <>
+      <Header />
+      <main
+        className="wp-block-group is-layout-flow wp-block-group-is-layout-flow"
+        style={{ marginTop: 0, marginBottom: 0 }}
+      >
+        <div className="entry-content wp-block-post-content has-global-padding is-layout-constrained wp-block-post-content-is-layout-constrained">
+          <div
+            className="wp-block-cover alignfull has-parallax"
+            style={{
+              paddingTop: 0,
+              paddingRight: 0,
+              paddingBottom: "var(--wp--preset--spacing--60)",
+              paddingLeft: 0,
+              minHeight: "80vh",
+              aspectRatio: "unset",
+            }}
+          >
+            <span
+              aria-hidden="true"
+              className="wp-block-cover__background has-black-background-color has-background-dim-40 has-background-dim"
+            ></span>
+            <div
+              className="wp-block-cover__image-background wp-image-249 has-parallax"
+              style={{
+                backgroundPosition: "50% 50%",
+                backgroundImage:
+                  "url(https://images.unsplash.com/photo-1562892302-97faedd66f1c?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+              }}
+            ></div>
+            <div className="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
+              <div className="wp-block-group has-global-padding is-content-justification-center is-layout-constrained wp-block-group-is-layout-constrained">
+                <div className="wp-block-group alignwide has-global-padding is-content-justification-left is-layout-constrained wp-container-core-group-is-layout-8 wp-block-group-is-layout-constrained">
+                  <div
+                    className="!inline-block wp-block-group has-foreground-color has-tertiary-background-color has-text-color has-background has-link-color wp-elements-b3cd801b136c4b371fb8395973180997 has-global-padding is-content-justification-left is-layout-constrained wp-container-core-group-is-layout-7 wp-block-group-is-layout-constrained"
+                    style={{
+                      borderRadius: 4,
+                      paddingTop: "var(--wp--preset--spacing--40)",
+                      paddingRight: "var(--wp--preset--spacing--40)",
+                      paddingBottom: "var(--wp--preset--spacing--40)",
+                      paddingLeft: "var(--wp--preset--spacing--40)",
+                    }}
+                  >
+                    <h1 className="wp-block-heading alignwide has-text-align-left">
+                      Explore nuestros servicios energéticos
+                    </h1>
+
+                    <div
+                      className="wp-block-buttons is-content-justification-left is-layout-flex wp-container-core-buttons-is-layout-1 wp-block-buttons-is-layout-flex"
+                      style={{ marginTop: "var(--wp--preset--spacing--30)" }}
+                    >
+                      <div className="wp-block-button has-custom-font-size has-small-font-size">
+                        <a
+                          className="wp-block-button__link wp-element-button"
+                          href="/contacto"
+                        >
+                          Contactar
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className="wp-block-group alignfull has-background-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-10 wp-block-group-is-layout-constrained"
+            style={{
+              marginTop: 0,
+              marginBottom: 0,
+              paddingTop: 0,
+              paddingRight: 0,
+              paddingBottom: 0,
+              paddingLeft: 0,
+            }}
+          ></div>
+
+          <div
+            className="wp-block-group alignfull has-tertiary-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-12 wp-block-group-is-layout-constrained"
+            id="servicios"
+            style={{
+              marginTop: 0,
+              marginBottom: 0,
+              paddingTop: "var(--wp--preset--spacing--60)",
+              paddingRight: "var(--wp--preset--spacing--30)",
+              paddingBottom: "var(--wp--preset--spacing--60)",
+              paddingLeft: "var(--wp--preset--spacing--30)",
+            }}
+          >
+            <div className="wp-block-group alignwide has-global-padding is-content-justification-left is-layout-constrained wp-container-core-group-is-layout-11 wp-block-group-is-layout-constrained">
+              <h2 className="!inline-block wp-block-heading has-large-font-size">
+                Descubre Nuestros Servicios Energéticos
+              </h2>
+            </div>
+
+            <div className="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-3 wp-block-columns-is-layout-flex">
+              <div
+                className="wp-block-column is-layout-flow wp-block-column-is-layout-flow"
+                style={{ flexBasis: "80%" }}
+              >
+                <div className="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-2 wp-block-columns-is-layout-flex">
+                  <div
+                    className="wp-block-column has-background-background-color has-background is-layout-flow wp-block-column-is-layout-flow"
+                    style={{ padding: "1.5rem" }}
+                  >
+                    <h3
+                      className="wp-block-heading"
+                      style={{
+                        fontSize:
+                          "clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.625), 20px)",
+                        lineHeight: 1.5,
+                      }}
+                    >
+                      Variedad de Soluciones Energéticas
+                    </h3>
+
+                    <p className="has-small-font-size" style={{ marginTop: 8 }}>
+                      Especialistas en suministro de combustibles y logística.{" "}
+                    </p>
+                  </div>
+
+                  <div
+                    className="wp-block-column has-background-background-color has-background is-layout-flow wp-block-column-is-layout-flow"
+                    style={{ padding: "1.5rem" }}
+                  >
+                    <h3
+                      className="wp-block-heading"
+                      style={{
+                        fontSize:
+                          "clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.625), 20px)",
+                        lineHeight: 1.5,
+                      }}
+                    >
+                      Entrega eficiente y segura
+                    </h3>
+
+                    <p className="has-small-font-size" style={{ marginTop: 8 }}>
+                      Garantizamos la entrega rápida y segura de sus productos
+                      energéticos.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-2 wp-block-columns-is-layout-flex">
+                  <div
+                    className="wp-block-column has-background-background-color has-background is-layout-flow wp-block-column-is-layout-flow"
+                    style={{ padding: "1.5rem" }}
+                  >
+                    <h3
+                      className="wp-block-heading"
+                      style={{
+                        fontSize:
+                          "clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.625), 20px)",
+                        lineHeight: 1.5,
+                      }}
+                    >
+                      Flexibilidad en la gestión de servicios
+                    </h3>
+
+                    <p className="has-small-font-size" style={{ marginTop: 8 }}>
+                      Soluciones energéticas seguras y personalizadas. Amplia
+                      gama de productos de combustibles.
+                    </p>
+                  </div>
+
+                  <div
+                    className="wp-block-column has-background-background-color has-background is-layout-flow wp-block-column-is-layout-flow"
+                    style={{ padding: "1.5rem" }}
+                  >
+                    <h3
+                      className="wp-block-heading"
+                      style={{
+                        fontSize:
+                          "clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.625), 20px)",
+                        lineHeight: 1.5,
+                      }}
+                    >
+                      Compromiso con la excelencia en servicio
+                    </h3>
+
+                    <p className="has-small-font-size" style={{ marginTop: 8 }}>
+                      Equipo dedicado y profesional para asistirle.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                className="wp-block-column is-layout-flow wp-block-column-is-layout-flow"
+                style={{ flexBasis: "50%" }}
+              >
+                <figure className="wp-block-image">
+                  <Image
+                    fetchPriority="high"
+                    decoding="async"
+                    width={1280}
+                    height={1919}
+                    src="https://images.unsplash.com/photo-1528109688329-6a043167789d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                    className="wp-image-34"
+                    style={{ aspectRatio: 1, objectFit: "cover" }}
+                    sizes="(max-width: 1280px) 100vw, 1280px"
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className="wp-block-group alignfull has-background-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-22 wp-block-group-is-layout-constrained"
+            style={{
+              marginTop: 0,
+              marginBottom: 0,
+              paddingTop: "var(--wp--preset--spacing--60)",
+              paddingRight: "var(--wp--preset--spacing--30)",
+              paddingBottom: "var(--wp--preset--spacing--60)",
+              paddingLeft: "var(--wp--preset--spacing--30)",
+            }}
+          >
+            <div className="wp-block-group alignwide has-global-padding is-content-justification-left is-layout-constrained wp-container-core-group-is-layout-13 wp-block-group-is-layout-constrained">
+              <h2 className="!inline-block wp-block-heading has-large-font-size">
+                Productos
+              </h2>
+
+              <p style={{ marginTop: 16 }} className="!mx-0">
+                Tu fuente confiable de energía en Madrid, España.
+              </p>
+            </div>
+
+            <div
+              className="wp-block-group alignwide has-tertiary-background-color has-background is-layout-flex wp-block-group-is-layout-flex"
+              style={{
+                borderRadius: 4,
+                paddingTop: 0,
+                paddingRight: 0,
+                paddingBottom: 0,
+                paddingLeft: 0,
+              }}
+            >
+              <div
+                className="wp-block-cover wp-container-content-2"
+                style={{
+                  paddingRight: "var(--wp--preset--spacing--80)",
+                  paddingLeft: "var(--wp--preset--spacing--80)",
+                  minHeight: 269,
+                  aspectRatio: "unset",
+                }}
+              >
+                <span
+                  aria-hidden="true"
+                  className="wp-block-cover__background has-background-dim-0 has-background-dim"
+                  style={{ backgroundColor: "#74504a" }}
+                ></span>
+                <Image
+                  decoding="async"
+                  width={2560}
+                  height={1707}
+                  className="wp-block-cover__image-background wp-image-439"
+                  alt=""
+                  src="https://images.unsplash.com/photo-1580668304124-945a763a7442?q=80&w=867&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  sizes="(max-width: 2560px) 100vw, 2560px"
+                />
+                <div className="wp-block-cover__inner-container has-global-padding is-layout-constrained wp-container-core-cover-is-layout-3 wp-block-cover-is-layout-constrained">
+                  <div
+                    style={{ height: 200, width: 0 }}
+                    aria-hidden="true"
+                    className="wp-block-spacer"
+                  ></div>
+                </div>
+              </div>
+
+              <div
+                className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained"
+                style={{
+                  paddingTop: "var(--wp--preset--spacing--40)",
+                  paddingBottom: "var(--wp--preset--spacing--40)",
+                }}
+              >
+                <h3
+                  className="wp-block-heading"
+                  style={{
+                    fontSize:
+                      "clamp(1.119rem, 1.119rem + ((1vw - 0.2rem) * 1.052), 1.75rem)",
+                    lineHeight: 1.5,
+                  }}
+                >
+                  <strong>Gasóleo A</strong>
+                </h3>
+
+                <p className="has-small-font-size" style={{ marginTop: 12 }}>
+                  Combustible diésel destinado principalmente a usos agrícolas,
+                  industriales y marítimos. Es ampliamente utilizado en
+                  maquinaria agrícola como tractores, cosechadoras y motores de
+                  riego, así como en equipos de construcción y generación de
+                  energía. Su formulación está diseñada para ofrecer eficiencia
+                  energética a un costo reducido, lo que lo hace ideal para
+                  aplicaciones profesionales que requieren un rendimiento
+                  confiable.
+                </p>
+              </div>
+            </div>
+            <div
+              className="wp-block-group alignwide has-tertiary-background-color has-background is-layout-flex wp-block-group-is-layout-flex"
+              style={{
+                borderRadius: 4,
+                paddingTop: 0,
+                paddingRight: 0,
+                paddingBottom: 0,
+                paddingLeft: 0,
+              }}
+            >
+              <div
+                className="wp-block-cover wp-container-content-2"
+                style={{
+                  paddingRight: "var(--wp--preset--spacing--80)",
+                  paddingLeft: "var(--wp--preset--spacing--80)",
+                  minHeight: 269,
+                  aspectRatio: "unset",
+                }}
+              >
+                <span
+                  aria-hidden="true"
+                  className="wp-block-cover__background has-background-dim-0 has-background-dim"
+                  style={{ backgroundColor: "#74504a" }}
+                ></span>
+                <Image
+                  decoding="async"
+                  width={2560}
+                  height={1707}
+                  className="wp-block-cover__image-background wp-image-439"
+                  alt=""
+                  src="https://images.unsplash.com/photo-1580668304124-945a763a7442?q=80&w=867&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  sizes="(max-width: 2560px) 100vw, 2560px"
+                />
+                <div className="wp-block-cover__inner-container has-global-padding is-layout-constrained wp-container-core-cover-is-layout-3 wp-block-cover-is-layout-constrained">
+                  <div
+                    style={{ height: 200, width: 0 }}
+                    aria-hidden="true"
+                    className="wp-block-spacer"
+                  ></div>
+                </div>
+              </div>
+
+              <div
+                className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained"
+                style={{
+                  paddingTop: "var(--wp--preset--spacing--40)",
+                  paddingBottom: "var(--wp--preset--spacing--40)",
+                }}
+              >
+                <h3
+                  className="wp-block-heading"
+                  style={{
+                    fontSize:
+                      "clamp(1.119rem, 1.119rem + ((1vw - 0.2rem) * 1.052), 1.75rem)",
+                    lineHeight: 1.5,
+                  }}
+                >
+                  <strong>Gasóleo B</strong>
+                </h3>
+
+                <p className="has-small-font-size" style={{ marginTop: 12 }}>
+                  Combustible diésel destinado principalmente a usos agrícolas,
+                  industriales y marítimos. Es ampliamente utilizado en
+                  maquinaria agrícola como tractores, cosechadoras y motores de
+                  riego, así como en equipos de construcción y generación de
+                  energía. Su formulación está diseñada para ofrecer eficiencia
+                  energética a un costo reducido, lo que lo hace ideal para
+                  aplicaciones profesionales que requieren un rendimiento
+                  confiable.
+                </p>
+              </div>
+            </div>
+
+            <div
+              className="wp-block-group alignwide has-tertiary-background-color has-background is-layout-flex wp-block-group-is-layout-flex"
+              style={{
+                borderRadius: 4,
+                paddingTop: 0,
+                paddingRight: 0,
+                paddingBottom: 0,
+                paddingLeft: 0,
+              }}
+            >
+              <div
+                className="wp-block-cover wp-container-content-3"
+                style={{
+                  paddingRight: "var(--wp--preset--spacing--80)",
+                  paddingLeft: "var(--wp--preset--spacing--80)",
+                  minHeight: 303,
+                  aspectRatio: "unset",
+                }}
+              >
+                <span
+                  aria-hidden="true"
+                  className="wp-block-cover__background has-background-dim-0 has-background-dim"
+                  style={{ backgroundColor: "#596f7b" }}
+                ></span>
+                <Image
+                  loading="lazy"
+                  decoding="async"
+                  width={2560}
+                  height={1920}
+                  className="wp-block-cover__image-background wp-image-442"
+                  alt=""
+                  src="https://images.unsplash.com/photo-1580668304124-945a763a7442?q=80&w=867&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  sizes="(max-width: 2560px) 100vw, 2560px"
+                />
+                <div className="wp-block-cover__inner-container has-global-padding is-layout-constrained wp-container-core-cover-is-layout-4 wp-block-cover-is-layout-constrained">
+                  <div
+                    style={{ height: 200, width: 0 }}
+                    aria-hidden="true"
+                    className="wp-block-spacer"
+                  ></div>
+                </div>
+              </div>
+
+              <div
+                className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained"
+                style={{
+                  paddingTop: "var(--wp--preset--spacing--40)",
+                  paddingBottom: "var(--wp--preset--spacing--40)",
+                }}
+              >
+                <h3
+                  className="wp-block-heading"
+                  style={{
+                    fontSize:
+                      "clamp(1.119rem, 1.119rem + ((1vw - 0.2rem) * 1.052), 1.75rem)",
+                    lineHeight: 1.5,
+                  }}
+                >
+                  <strong>Gasóleo C</strong>
+                </h3>
+
+                <p className="has-small-font-size" style={{ marginTop: 12 }}>
+                  El Gasóleo C, también conocido como gasóleo de calefacción,
+                  está diseñado para sistemas de calefacción en sectores
+                  residenciales, comerciales e industriales. Es utilizado en
+                  calderas y hornos para la climatización de edificios y la
+                  generación de agua caliente. Además, encuentra aplicaciones en
+                  entornos agrícolas y ganaderos, como la calefacción de
+                  invernaderos y granjas. Su alto poder calorífico lo convierte
+                  en una opción eficiente y económica para satisfacer
+                  necesidades de calefacción intensiva.
+                </p>
+              </div>
+            </div>
+
+            <div
+              className="wp-block-group alignwide has-tertiary-background-color has-background is-layout-flex wp-block-group-is-layout-flex"
+              style={{
+                borderRadius: 4,
+                paddingTop: 0,
+                paddingRight: 0,
+                paddingBottom: 0,
+                paddingLeft: 0,
+              }}
+            >
+              <div
+                className="wp-block-cover is-light wp-container-content-4"
+                style={{
+                  paddingRight: "var(--wp--preset--spacing--80)",
+                  paddingLeft: "var(--wp--preset--spacing--80)",
+                  minHeight: 304,
+                  aspectRatio: "unset",
+                }}
+              >
+                <span
+                  aria-hidden="true"
+                  className="wp-block-cover__background has-background-dim-0 has-background-dim"
+                  style={{ backgroundColor: "#8b8e8c" }}
+                ></span>
+                <Image
+                  loading="lazy"
+                  decoding="async"
+                  width={2505}
+                  height={2560}
+                  className="wp-block-cover__image-background wp-image-441"
+                  alt=""
+                  src="https://images.unsplash.com/photo-1580668304124-945a763a7442?q=80&w=867&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  sizes="(max-width: 2505px) 100vw, 2505px"
+                />
+                <div className="wp-block-cover__inner-container has-global-padding is-layout-constrained wp-container-core-cover-is-layout-5 wp-block-cover-is-layout-constrained">
+                  <div
+                    style={{ height: 200, width: 0 }}
+                    aria-hidden="true"
+                    className="wp-block-spacer"
+                  ></div>
+                </div>
+              </div>
+
+              <div
+                className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained"
+                style={{
+                  paddingTop: "var(--wp--preset--spacing--40)",
+                  paddingBottom: "var(--wp--preset--spacing--40)",
+                }}
+              >
+                <h3
+                  className="wp-block-heading"
+                  style={{
+                    fontSize:
+                      "clamp(1.119rem, 1.119rem + ((1vw - 0.2rem) * 1.052), 1.75rem)",
+                    lineHeight: 1.5,
+                  }}
+                >
+                  <strong>Gasolina 95</strong>
+                </h3>
+
+                <p className="has-small-font-size" style={{ marginTop: 12 }}>
+                  La gasolina 95, conocida como gasolina sin plomo, es un
+                  combustible derivado del petróleo diseñado para motores de
+                  vehículos ligeros, como automóviles y motocicletas. Su
+                  octanaje garantiza un alto rendimiento, siendo ideal para
+                  motores estándar. Además, su composición reducida en
+                  compuestos contaminantes, como el plomo, favorece una
+                  combustión más limpia, contribuyendo a disminuir las emisiones
+                  y a proteger el medio ambiente, todo mientras asegura una
+                  conducción eficiente y confiable.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className="wp-block-cover alignfull has-parallax"
+            style={{
+              paddingTop: 0,
+              paddingRight: "var(--wp--preset--spacing--30)",
+              paddingBottom: 0,
+              paddingLeft: "var(--wp--preset--spacing--30)",
+              minHeight: 50,
+              aspectRatio: "unset",
+            }}
+          >
+            <span
+              aria-hidden="true"
+              className="wp-block-cover__background has-black-background-color has-background-dim-60 has-background-dim"
+            ></span>
+            <div
+              className="wp-block-cover__image-background wp-image-250 has-parallax"
+              style={{
+                backgroundPosition: "50% 50%",
+                backgroundImage:
+                  "url(https://images.unsplash.com/photo-1628002580365-f3c0a322d577?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+              }}
+            ></div>
+            <div className="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
+              <div
+                className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained"
+                style={{
+                  paddingTop: "var(--wp--preset--spacing--60)",
+                  paddingBottom: "var(--wp--preset--spacing--60)",
+                }}
+              >
+                <div className="wp-block-group alignwide has-global-padding is-content-justification-center is-layout-constrained wp-block-group-is-layout-constrained">
+                  <h1
+                    className="wp-block-heading has-text-align-center has-text-color has-x-large-font-size"
+                    style={{ color: "#fffffffc" }}
+                  >
+                    Confía en nuestra experiencia
+                  </h1>
+
+                  <p
+                    className="has-text-align-center has-text-color"
+                    style={{ color: "#fffffffc", marginTop: 16 }}
+                  >
+                    Descubre nuestra gama de combustibles de calidad. Recibe
+                    asesoramiento experto para tus necesidades energéticas en
+                    España e Italia.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p></p>
+        </div>
+
+        <p></p>
+      </main>
+      <Footer />
+    </>
+  );
+};
+
+export default page;

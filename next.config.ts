@@ -6,7 +6,7 @@ const withNextIntl = createNextIntlPlugin();
 const nextConfig: NextConfig = {
   /* config options here */
   images: {
-    domains: ["images.unsplash.com","www.shutterstock.com"],
+    domains: ["images.unsplash.com","www.shutterstock.com", "arizonagestionenergy.com"],
   },
 };
 
