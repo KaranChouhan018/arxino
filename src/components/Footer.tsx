@@ -1,7 +1,10 @@
 import React from "react";
-import Link from "next/link";
+import {Link} from '@/src/i18n/routing';
+import {useTranslations} from 'next-intl';
 
 const Footer: React.FC = () => {
+  const t = useTranslations('footer');
+  
   return (
     <footer className="wp-block-template-part">
       <div
@@ -13,7 +16,7 @@ const Footer: React.FC = () => {
       >
         <div className="wp-block-group alignwide is-content-justification-left is-nowrap is-layout-flex wp-container-core-group-is-layout-17 wp-block-group-is-layout-flex">
           <p className="has-text-align-center !w-[500px]">
-            © 2024 Arizona Gestión Energy S.L.
+            {t('copyright')}
           </p>
 
           <div
@@ -30,7 +33,7 @@ const Footer: React.FC = () => {
               data-type="link"
               data-id="https://arizonagestionenergy.com/sample-page/"
             >
-              Aviso legal
+              {t('legal_notice')}
             </Link>{" "}
             {" | "}{" "}
             <Link
@@ -40,7 +43,7 @@ const Footer: React.FC = () => {
               data-type="link"
               data-id="https://arizonagestionenergy.com/privacy-policy/"
             >
-              Política de privacidad
+              {t('privacy_policy')}
             </Link>{" "}
             {" | "}{" "}
             <Link
@@ -48,7 +51,7 @@ const Footer: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Política de cookies
+              {t('cookies_policy')}
             </Link>
           </p>
         </div>

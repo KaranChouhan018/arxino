@@ -2,9 +2,12 @@ import Footer from "@/src/components/Footer";
 import Header from "@/src/components/Header";
 import Image from "next/image";
 import React from "react";
-import Link from "next/link";
+import {Link} from '@/src/i18n/routing';
+import {useTranslations} from 'next-intl';
 
 const ContactPage: React.FC = () => {
+  const t = useTranslations('contact');
+  
   return (
     <>
       <Header />
@@ -53,7 +56,7 @@ const ContactPage: React.FC = () => {
                         marginBottom: "var(--wp--preset--spacing--30)",
                       }}
                     >
-                      <strong>Contacto</strong>
+                      <strong>{t('title')}</strong>
                     </h2>
                   </div>
                 </div>
@@ -123,7 +126,7 @@ const ContactPage: React.FC = () => {
                                 style={{ backgroundColor: "rgba(0, 0, 0, 0)" }}
                                 className="has-inline-color has-primary-color"
                               >
-                                Información de contacto
+                                {t('info_title')}
                               </mark>
                             </h2>
 
@@ -139,7 +142,6 @@ const ContactPage: React.FC = () => {
                                     <div className="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-13 wp-block-group-is-layout-flex">
                                       <div className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
                                         <figure className="wp-block-image alignleft size-full is-resized ext-aspect-landscape wp-duotone-rgb15133229-ffffff-3">
-                                          {/* Option 1: Using custom icon image */}
                                           <Image
                                             width={549}
                                             height={500}
@@ -152,18 +154,13 @@ const ContactPage: React.FC = () => {
                                               height: "auto",
                                             }}
                                           />
-
-                                          {/* Option 2: Using Lucide React icon (uncomment to use this instead) */}
-                                          {/* <div className="flex items-center justify-center w-[57px] h-[57px] bg-primary rounded-lg">
-                    <MapPin className="w-8 h-8 text-white" />
-                  </div> */}
                                         </figure>
                                       </div>
 
                                       <div className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
                                         <p className="has-primary-color has-text-color has-link-color has-small-font-size wp-elements-ff310899294439e3b4c509166ace9a2a">
-                                          <strong>Dirección. </strong>C/
-                                          Velazquez 3, 3º, 28009 Madrid
+                                          <strong>{t('address')}. </strong>
+                                          {t('address_value')}
                                         </p>
                                       </div>
                                     </div>
@@ -181,7 +178,6 @@ const ContactPage: React.FC = () => {
                                       <div className="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-18 wp-block-group-is-layout-flex">
                                         <div className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
                                           <figure className="wp-block-image alignleft size-full is-resized ext-aspect-landscape wp-duotone-unset-4">
-                                            {/* Option 1: Using custom icon image */}
                                             <Image
                                               width={512}
                                               height={512}
@@ -194,16 +190,11 @@ const ContactPage: React.FC = () => {
                                                 height: "auto",
                                               }}
                                             />
-
-                                            {/* Option 2: Using Lucide React icon (uncomment to use this instead) */}
-                                            {/* <div className="flex items-center justify-center w-[51px] h-[51px] bg-primary rounded-lg">
-                      <Phone className="w-7 h-7 text-white" />
-                    </div> */}
                                           </figure>
                                         </div>
 
                                         <p className="has-primary-color has-text-color has-link-color wp-elements-5f4b78846fc4b84276f710d8d0b5315f">
-                                          <strong>Teléfono</strong>.{" "}
+                                          <strong>{t('phone')}</strong>.{" "}
                                           <Link
                                             href="tel:+34608297125"
                                             className="hover:underline"
@@ -219,7 +210,6 @@ const ContactPage: React.FC = () => {
                                   {/* Email Section */}
                                   <div className="wp-block-group is-content-justification-left is-nowrap is-layout-flex wp-container-core-group-is-layout-21 wp-block-group-is-layout-flex">
                                     <figure className="wp-block-image alignleft size-full is-resized ext-aspect-landscape wp-duotone-1f8cff-1c0a63-5">
-                                      {/* Option 1: Using custom icon image */}
                                       <Image
                                         width={512}
                                         height={512}
@@ -232,18 +222,13 @@ const ContactPage: React.FC = () => {
                                           height: "auto",
                                         }}
                                       />
-
-                                      {/* Option 2: Using Lucide React icon (uncomment to use this instead) */}
-                                      {/* <div className="flex items-center justify-center w-[57px] h-[57px] bg-primary rounded-lg">
-                <Mail className="w-8 h-8 text-white" />
-              </div> */}
                                     </figure>
 
                                     <p
                                       className="has-text-align-center has-primary-color has-text-color has-link-color wp-elements-6c93572ec24fe0b43d332b5c08c10edd"
                                       style={{ marginTop: "0px" }}
                                     >
-                                      <strong>Email.</strong>{" "}
+                                      <strong>{t('email')}.</strong>{" "}
                                       <Link
                                         href="mailto:administración@arizonagestionenergy.com"
                                         className="hover:underline"
@@ -293,11 +278,7 @@ const ContactPage: React.FC = () => {
                           className="has-small-font-size"
                           style={{ marginTop: "8px" }}
                         >
-                          En Arizona Gestión Energy, nos dedicamos a ofrecer
-                          soluciones energéticas integrales en el sector de los
-                          hidrocarburos. Con más de [X] años de experiencia, nos
-                          enfocamos en proporcionar un servicio eficiente,
-                          seguro y de alta calidad a nuestros clientes.
+                          {t('description')}
                         </p>
                       </div>
                     </div>

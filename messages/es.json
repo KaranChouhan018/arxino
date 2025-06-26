@@ -1,0 +1,44 @@
+{
+  "navigation": {
+    "about": "Quiénes somos",
+    "team": "Equipo",
+    "services": "Servicios",
+    "news": "Noticias",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "subtitle": "Explora nuestras soluciones energéticas",
+    "title": "Excelencia en Suministro Energético",
+    "cta": "Contáctanos"
+  },
+  "about": {
+    "title": "Impulsa tu negocio con energía confiable",
+    "description1": "Dedicados a brindar excelencia en calidad y servicio.",
+    "description2": "Ofrecemos una amplia variedad de productos en casi todas las instalaciones de almacenamiento distribuidas por la red en España, tales como Exolum, Tepsa Bilbao,Tepsa Barcelona, Decal, DBA y Tradebe.",
+    "services_button": "Servicios"
+  },
+  "distribution": {
+    "title": "Distribución de Hidrocarburos",
+    "description": "Descubre soluciones energéticas eficientes con nosotros. Explora nuestra gama de combustibles y experimenta un servicio excepcional en España e Italia.",
+    "more_info": "Más información"
+  },
+  "trajectory": {
+    "title": "Nuestra Trayectoria y Compromiso en el Sector Energético",
+    "description": "Arizona Gestion Energy Sl, su aliado en combustibles en Madrid. Acceda a combustibles sólidos, líquidos y gaseosos de manera eficiente y confiable en toda España."
+  },
+  "footer": {
+    "copyright": "© 2024 Arizona Gestión Energy S.L.",
+    "legal_notice": "Aviso legal",
+    "privacy_policy": "Política de privacidad",
+    "cookies_policy": "Política de cookies"
+  },
+  "contact": {
+    "title": "Contacto",
+    "info_title": "Información de contacto",
+    "address": "Dirección",
+    "address_value": "C/ Velazquez 3, 3º, 28009 Madrid",
+    "phone": "Teléfono",
+    "email": "Email",
+    "description": "En Arizona Gestión Energy, nos dedicamos a ofrecer soluciones energéticas integrales en el sector de los hidrocarburos. Con más de [X] años de experiencia, nos enfocamos en proporcionar un servicio eficiente, seguro y de alta calidad a nuestros clientes."
+  }
+}

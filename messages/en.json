@@ -1,0 +1,44 @@
+{
+  "navigation": {
+    "about": "About Us",
+    "team": "Team",
+    "services": "Services",
+    "news": "News",
+    "contact": "Contact"
+  },
+  "hero": {
+    "subtitle": "Explore our energy solutions",
+    "title": "Excellence in Energy Supply",
+    "cta": "Contact Us"
+  },
+  "about": {
+    "title": "Power your business with reliable energy",
+    "description1": "Dedicated to providing excellence in quality and service.",
+    "description2": "We offer a wide variety of products in almost all storage facilities distributed throughout the network in Spain, such as Exolum, Tepsa Bilbao, Tepsa Barcelona, Decal, DBA and Tradebe.",
+    "services_button": "Services"
+  },
+  "distribution": {
+    "title": "Hydrocarbon Distribution",
+    "description": "Discover efficient energy solutions with us. Explore our range of fuels and experience exceptional service in Spain and Italy.",
+    "more_info": "More information"
+  },
+  "trajectory": {
+    "title": "Our Trajectory and Commitment in the Energy Sector",
+    "description": "Arizona Gestion Energy Sl, your fuel ally in Madrid. Access solid, liquid and gaseous fuels efficiently and reliably throughout Spain."
+  },
+  "footer": {
+    "copyright": "© 2024 Arizona Gestión Energy S.L.",
+    "legal_notice": "Legal Notice",
+    "privacy_policy": "Privacy Policy",
+    "cookies_policy": "Cookies Policy"
+  },
+  "contact": {
+    "title": "Contact",
+    "info_title": "Contact Information",
+    "address": "Address",
+    "address_value": "C/ Velazquez 3, 3º, 28009 Madrid",
+    "phone": "Phone",
+    "email": "Email",
+    "description": "At Arizona Gestión Energy, we are dedicated to offering comprehensive energy solutions in the hydrocarbon sector. With more than [X] years of experience, we focus on providing efficient, safe and high-quality service to our clients."
+  }
+}
