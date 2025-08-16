@@ -35,13 +35,14 @@ const Header: React.FC = () => {
               <div className="wp-block-site-logo">
                 <Link href="/" aria-current="page" className="custom-logo-link">
                   <Image
-                    width={322}
-                    height={111}
-                    src="/images/logo-arizona-s.jpeg"
+                    width={150}
+                    height={100}
+                    src="/images/logo.png"
                     className="custom-logo"
                     alt="Arizona Gestión Energy"
                     decoding="async"
-                    sizes="(max-width: 322px) 100vw, 322px"
+                    data-nimg="1"
+                    
                   />
                 </Link>
               </div>
@@ -52,14 +53,14 @@ const Header: React.FC = () => {
                 className="wp-block-site-title has-medium-font-size"
               >
                 <Link href="/" aria-current="page" className="site-title-link">
-                  Arizona Gestión Energy
+                  Dux Ventures
                 </Link>
               </h1>
             </div>
           </div>
           <div className="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-4 wp-block-group-is-layout-flex">
             {/* Language Switcher */}
-            <div className="absolute right-12 top-5">
+            <div className="absolute right-12 top-5 hidden lg:block">
               <button
                 onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
                 className="flex items-center space-x-2 px-3 py-2 rounded-md hover:bg-gray-100 transition-colors"
@@ -85,7 +86,7 @@ const Header: React.FC = () => {
               </button>
 
               {isLangMenuOpen && (
-                <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg border border-gray-200 z-50">
+                <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg  border border-gray-200 z-50">
                   {languages.map((lang) => (
                     <Link
                       key={lang.code}
@@ -184,44 +185,11 @@ const Header: React.FC = () => {
                         <li className="wp-block-navigation-item wp-block-navigation-link">
                           <Link
                             className="wp-block-navigation-item__content"
-                            href="/equipo"
-                            rel="noopener noreferrer"
-                          >
-                            <span className="wp-block-navigation-item__label">
-                              <strong>{t("team")}</strong>
-                            </span>
-                          </Link>
-                        </li>
-                        <li className="wp-block-navigation-item wp-block-navigation-link">
-                          <Link
-                            className="wp-block-navigation-item__content"
                             href="/servicios"
                             rel="noopener noreferrer"
                           >
                             <span className="wp-block-navigation-item__label">
                               <strong>{t("services")}</strong>
-                            </span>
-                          </Link>
-                        </li>
-                        <li className="wp-block-navigation-item wp-block-navigation-link">
-                          <Link
-                            className="wp-block-navigation-item__content"
-                            href="/noticias"
-                            rel="noopener noreferrer"
-                          >
-                            <span className="wp-block-navigation-item__label">
-                              <strong>{t("news")}</strong>
-                            </span>
-                          </Link>
-                        </li>
-                        <li className="wp-block-navigation-item wp-block-navigation-link">
-                          <Link
-                            className="wp-block-navigation-item__content"
-                            href="/contacto"
-                            rel="noopener noreferrer"
-                          >
-                            <span className="wp-block-navigation-item__label">
-                              <strong>{t("contact")}</strong>
                             </span>
                           </Link>
                         </li>
@@ -245,7 +213,7 @@ const Header: React.FC = () => {
           <div className="relative">
             <button
               onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
-              className="flex items-center space-x-2 px-3 py-2 rounded-md hover:bg-gray-100 transition-colors"
+              className="flex items-center  space-x-2 px-3 py-2 rounded-md hover:bg-gray-100 transition-colors"
             >
               <Globe className="w-4 h-4" />
               <span className="text-sm font-medium">
@@ -314,32 +282,11 @@ const Header: React.FC = () => {
             {t("about")}
           </Link>
           <Link
-            href="/equipo"
-            className="!no-underline"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            {t("team")}
-          </Link>
-          <Link
             href="/servicios"
             className="!no-underline"
             onClick={() => setIsMenuOpen(false)}
           >
             {t("services")}
-          </Link>
-          <Link
-            href="/noticias"
-            className="!no-underline"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            {t("news")}
-          </Link>
-          <Link
-            href="/contacto"
-            className="!no-underline"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            {t("contact")}
           </Link>
         </nav>
       </div>

@@ -2,8 +2,10 @@ import React from "react";
 import Header from "@/src/components/Header";
 import Footer from "@/src/components/Footer";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const page: React.FC = () => {
+  const t = useTranslations("servicios");
   return (
     <>
       <Header />
@@ -49,9 +51,8 @@ const page: React.FC = () => {
                     }}
                   >
                     <h1 className="wp-block-heading alignwide has-text-align-left">
-                      Explore nuestros servicios energéticos
+                      {t("explore_services")}
                     </h1>
-
                     <div
                       className="wp-block-buttons is-content-justification-left is-layout-flex wp-container-core-buttons-is-layout-1 wp-block-buttons-is-layout-flex"
                       style={{ marginTop: "var(--wp--preset--spacing--30)" }}
@@ -59,9 +60,9 @@ const page: React.FC = () => {
                       <div className="wp-block-button has-custom-font-size has-small-font-size">
                         <a
                           className="wp-block-button__link wp-element-button"
-                          href="/contacto"
+                          href="/servicios"
                         >
-                          Contactar
+                          {t("contact")}
                         </a>
                       </div>
                     </div>
@@ -70,7 +71,6 @@ const page: React.FC = () => {
               </div>
             </div>
           </div>
-
           <div
             className="wp-block-group alignfull has-background-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-10 wp-block-group-is-layout-constrained"
             style={{
@@ -82,7 +82,6 @@ const page: React.FC = () => {
               paddingLeft: 0,
             }}
           ></div>
-
           <div
             className="wp-block-group alignfull has-tertiary-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-12 wp-block-group-is-layout-constrained"
             id="servicios"
@@ -97,10 +96,9 @@ const page: React.FC = () => {
           >
             <div className="wp-block-group alignwide has-global-padding is-content-justification-left is-layout-constrained wp-container-core-group-is-layout-11 wp-block-group-is-layout-constrained">
               <h2 className="!inline-block wp-block-heading has-large-font-size">
-                Descubre Nuestros Servicios Energéticos
+                {t("discover_services")}
               </h2>
             </div>
-
             <div className="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-3 wp-block-columns-is-layout-flex">
               <div
                 className="wp-block-column is-layout-flow wp-block-column-is-layout-flow"
@@ -119,14 +117,12 @@ const page: React.FC = () => {
                         lineHeight: 1.5,
                       }}
                     >
-                      Variedad de Soluciones Energéticas
+                      {t("supply_procurement")}
                     </h3>
-
                     <p className="has-small-font-size" style={{ marginTop: 8 }}>
-                      Especialistas en suministro de combustibles y logística.{" "}
+                      {t("supply_procurement_desc")}
                     </p>
                   </div>
-
                   <div
                     className="wp-block-column has-background-background-color has-background is-layout-flow wp-block-column-is-layout-flow"
                     style={{ padding: "1.5rem" }}
@@ -139,16 +135,13 @@ const page: React.FC = () => {
                         lineHeight: 1.5,
                       }}
                     >
-                      Entrega eficiente y segura
+                      {t("trading_risk")}
                     </h3>
-
                     <p className="has-small-font-size" style={{ marginTop: 8 }}>
-                      Garantizamos la entrega rápida y segura de sus productos
-                      energéticos.
+                      {t("trading_risk_desc")}
                     </p>
                   </div>
                 </div>
-
                 <div className="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-2 wp-block-columns-is-layout-flex">
                   <div
                     className="wp-block-column has-background-background-color has-background is-layout-flow wp-block-column-is-layout-flow"
@@ -162,15 +155,12 @@ const page: React.FC = () => {
                         lineHeight: 1.5,
                       }}
                     >
-                      Flexibilidad en la gestión de servicios
+                      {t("logistics_delivery")}
                     </h3>
-
                     <p className="has-small-font-size" style={{ marginTop: 8 }}>
-                      Soluciones energéticas seguras y personalizadas. Amplia
-                      gama de productos de combustibles.
+                      {t("logistics_delivery_desc")}
                     </p>
                   </div>
-
                   <div
                     className="wp-block-column has-background-background-color has-background is-layout-flow wp-block-column-is-layout-flow"
                     style={{ padding: "1.5rem" }}
@@ -183,16 +173,34 @@ const page: React.FC = () => {
                         lineHeight: 1.5,
                       }}
                     >
-                      Compromiso con la excelencia en servicio
+                      {t("compliance_quality")}
                     </h3>
-
                     <p className="has-small-font-size" style={{ marginTop: 8 }}>
-                      Equipo dedicado y profesional para asistirle.
+                      {t("compliance_quality_desc")}
+                    </p>
+                  </div>
+                </div>
+                <div className="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-2 wp-block-columns-is-layout-flex">
+                  <div
+                    className="wp-block-column has-background-background-color has-background is-layout-flow wp-block-column-is-layout-flow"
+                    style={{ padding: "1.5rem" }}
+                  >
+                    <h3
+                      className="wp-block-heading"
+                      style={{
+                        fontSize:
+                          "clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.625), 20px)",
+                        lineHeight: 1.5,
+                      }}
+                    >
+                      {t("strategic_advisory")}
+                    </h3>
+                    <p className="has-small-font-size" style={{ marginTop: 8 }}>
+                      {t("strategic_advisory_desc")}
                     </p>
                   </div>
                 </div>
               </div>
-
               <div
                 className="wp-block-column is-layout-flow wp-block-column-is-layout-flow"
                 style={{ flexBasis: "50%" }}
@@ -213,7 +221,6 @@ const page: React.FC = () => {
               </div>
             </div>
           </div>
-
           <div
             className="wp-block-group alignfull has-background-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-22 wp-block-group-is-layout-constrained"
             style={{
@@ -227,14 +234,12 @@ const page: React.FC = () => {
           >
             <div className="wp-block-group alignwide has-global-padding is-content-justification-left is-layout-constrained wp-container-core-group-is-layout-13 wp-block-group-is-layout-constrained">
               <h2 className="!inline-block wp-block-heading has-large-font-size">
-                Productos
+                {t("products")}
               </h2>
-
               <p style={{ marginTop: 16 }} className="!mx-0">
-                Tu fuente confiable de energía en Madrid, España.
+                {t("trusted_source")}
               </p>
             </div>
-
             <div
               className="wp-block-group alignwide has-tertiary-background-color has-background is-layout-flex wp-block-group-is-layout-flex"
               style={{
@@ -276,7 +281,6 @@ const page: React.FC = () => {
                   ></div>
                 </div>
               </div>
-
               <div
                 className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained"
                 style={{
@@ -292,18 +296,10 @@ const page: React.FC = () => {
                     lineHeight: 1.5,
                   }}
                 >
-                  <strong>Gasóleo A</strong>
+                  <strong>{t("gasoil_a")}</strong>
                 </h3>
-
                 <p className="has-small-font-size" style={{ marginTop: 12 }}>
-                  Combustible diésel destinado principalmente a usos agrícolas,
-                  industriales y marítimos. Es ampliamente utilizado en
-                  maquinaria agrícola como tractores, cosechadoras y motores de
-                  riego, así como en equipos de construcción y generación de
-                  energía. Su formulación está diseñada para ofrecer eficiencia
-                  energética a un costo reducido, lo que lo hace ideal para
-                  aplicaciones profesionales que requieren un rendimiento
-                  confiable.
+                  {t("gasoil_a_desc")}
                 </p>
               </div>
             </div>
@@ -348,7 +344,6 @@ const page: React.FC = () => {
                   ></div>
                 </div>
               </div>
-
               <div
                 className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained"
                 style={{
@@ -364,22 +359,13 @@ const page: React.FC = () => {
                     lineHeight: 1.5,
                   }}
                 >
-                  <strong>Gasóleo B</strong>
+                  <strong>{t("gasoil_b")}</strong>
                 </h3>
-
                 <p className="has-small-font-size" style={{ marginTop: 12 }}>
-                  Combustible diésel destinado principalmente a usos agrícolas,
-                  industriales y marítimos. Es ampliamente utilizado en
-                  maquinaria agrícola como tractores, cosechadoras y motores de
-                  riego, así como en equipos de construcción y generación de
-                  energía. Su formulación está diseñada para ofrecer eficiencia
-                  energética a un costo reducido, lo que lo hace ideal para
-                  aplicaciones profesionales que requieren un rendimiento
-                  confiable.
+                  {t("gasoil_b_desc")}
                 </p>
               </div>
             </div>
-
             <div
               className="wp-block-group alignwide has-tertiary-background-color has-background is-layout-flex wp-block-group-is-layout-flex"
               style={{
@@ -422,7 +408,6 @@ const page: React.FC = () => {
                   ></div>
                 </div>
               </div>
-
               <div
                 className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained"
                 style={{
@@ -438,23 +423,13 @@ const page: React.FC = () => {
                     lineHeight: 1.5,
                   }}
                 >
-                  <strong>Gasóleo C</strong>
+                  <strong>{t("gasoil_c")}</strong>
                 </h3>
-
                 <p className="has-small-font-size" style={{ marginTop: 12 }}>
-                  El Gasóleo C, también conocido como gasóleo de calefacción,
-                  está diseñado para sistemas de calefacción en sectores
-                  residenciales, comerciales e industriales. Es utilizado en
-                  calderas y hornos para la climatización de edificios y la
-                  generación de agua caliente. Además, encuentra aplicaciones en
-                  entornos agrícolas y ganaderos, como la calefacción de
-                  invernaderos y granjas. Su alto poder calorífico lo convierte
-                  en una opción eficiente y económica para satisfacer
-                  necesidades de calefacción intensiva.
+                  {t("gasoil_c_desc")}
                 </p>
               </div>
             </div>
-
             <div
               className="wp-block-group alignwide has-tertiary-background-color has-background is-layout-flex wp-block-group-is-layout-flex"
               style={{
@@ -497,7 +472,6 @@ const page: React.FC = () => {
                   ></div>
                 </div>
               </div>
-
               <div
                 className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained"
                 style={{
@@ -513,24 +487,14 @@ const page: React.FC = () => {
                     lineHeight: 1.5,
                   }}
                 >
-                  <strong>Gasolina 95</strong>
+                  <strong>{t("gasoline_95")}</strong>
                 </h3>
-
                 <p className="has-small-font-size" style={{ marginTop: 12 }}>
-                  La gasolina 95, conocida como gasolina sin plomo, es un
-                  combustible derivado del petróleo diseñado para motores de
-                  vehículos ligeros, como automóviles y motocicletas. Su
-                  octanaje garantiza un alto rendimiento, siendo ideal para
-                  motores estándar. Además, su composición reducida en
-                  compuestos contaminantes, como el plomo, favorece una
-                  combustión más limpia, contribuyendo a disminuir las emisiones
-                  y a proteger el medio ambiente, todo mientras asegura una
-                  conducción eficiente y confiable.
+                  {t("gasoline_95_desc")}
                 </p>
               </div>
             </div>
           </div>
-
           <div
             className="wp-block-cover alignfull has-parallax"
             style={{
@@ -567,30 +531,24 @@ const page: React.FC = () => {
                     className="wp-block-heading has-text-align-center has-text-color has-x-large-font-size"
                     style={{ color: "#fffffffc" }}
                   >
-                    Confía en nuestra experiencia
+                    {t("trust_experience")}
                   </h1>
-
                   <p
                     className="has-text-align-center has-text-color"
                     style={{ color: "#fffffffc", marginTop: 16 }}
                   >
-                    Descubre nuestra gama de combustibles de calidad. Recibe
-                    asesoramiento experto para tus necesidades energéticas en
-                    España e Italia.
+                    {t("discover_range")}
                   </p>
                 </div>
               </div>
             </div>
           </div>
-
           <p></p>
         </div>
-
         <p></p>
       </main>
       <Footer />
     </>
   );
 };
-
 export default page;

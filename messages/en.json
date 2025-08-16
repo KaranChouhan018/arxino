@@ -7,24 +7,27 @@
     "contact": "Contact"
   },
   "hero": {
-    "subtitle": "Explore our energy solutions",
-    "title": "Excellence in Energy Supply",
+    "subtitle": "Welcome to DVX Ventures",
+    "title": "At DVX Ventures, we are dedicated to fuel trading excellence—delivering smart, reliable fuel sourcing solutions globally. With deep market expertise, robust logistics, and integrity at the core, we support industrial clients, distributors, and large-scale users.",
     "cta": "Contact Us"
   },
   "about": {
-    "title": "Power your business with reliable energy",
-    "description1": "Dedicated to providing excellence in quality and service.",
-    "description2": "We offer a wide variety of products in almost all storage facilities distributed throughout the network in Spain, such as Exolum, Tepsa Bilbao, Tepsa Barcelona, Decal, DBA and Tradebe.",
+    "title": "Why Choose DVX Ventures?",
+    "description1": "Market-driven sourcing: We monitor fuel markets in real time and negotiate optimal contracts.",
+    "description2": "Global reach: Broad access to refined fuels, biofuels, LPG, and specialty hydrocarbons.",
+    "description3": "Transparent operations: Clear pricing, risk management, and regulatory compliance.",
+    "description4": "Reliable logistics: From terminal to delivery—we ensure timely distribution.",
     "services_button": "Services"
   },
   "distribution": {
-    "title": "Hydrocarbon Distribution",
-    "description": "Discover efficient energy solutions with us. Explore our range of fuels and experience exceptional service in Spain and Italy.",
+    "title": "Our Mission & Vision",
+    "description": "We aim to be a trusted intermediary in fuel commodities, optimizing client cost and supply reliability while promoting sustainability and value.",
     "more_info": "More information"
   },
   "trajectory": {
-    "title": "Our Trajectory and Commitment in the Energy Sector",
-    "description": "Arizona Gestion Energy Sl, your fuel ally in Madrid. Access solid, liquid and gaseous fuels efficiently and reliably throughout Spain."
+    "title": "Our Track Record and Commitment in the Energy Sectorr",
+    "description": "Dux Ventures Inc, your fuel ally in Madrid. Access solid, liquid, and gaseous fuels efficiently and reliably throughout Spain.",
+    "cta": "Contact Us  "
   },
   "footer": {
     "copyright": "© 2024 Arizona Gestión Energy S.L.",
@@ -40,5 +43,52 @@
     "phone": "Phone",
     "email": "Email",
     "description": "At Arizona Gestión Energy, we are dedicated to offering comprehensive energy solutions in the hydrocarbon sector. With more than [X] years of experience, we focus on providing efficient, safe and high-quality service to our clients."
-  }
+  },
+  "sobre": {
+    "hero_title": "Who We Are",
+    "hero_description": "DVX Ventures is a dedicated fuel trading firm combining years of experience in energy markets, logistics, and risk management. Our team blends analytical rigor with hands-on operational capability.",
+    "who_we_are": "Who We Are",
+    "who_we_are_desc1": "We provide comprehensive energy solutions within the hydrocarbon sector, specializing in the efficient and secure trading of diesel and gasoline products.",
+    "who_we_are_desc2": "Our multidisciplinary team brings years of experience in the European and international hydrocarbon markets, as well as in import logistics. We are defined by our innovation, flexibility, and proactive approach in a constantly evolving industry.",
+    "who_we_are_desc3": "We are committed to ensuring a continuous, safe, and reliable supply of hydrocarbons, tailoring our services to the unique needs of each client with a personalized and high-quality approach.",
+    "integrity_title": "Integrity in Every Transaction",
+    "integrity_desc": "We uphold transparency and ethical standards in every deal, ensuring trust and long-term relationships across the global energy market.",
+    "market_intelligence_title": "Market Intelligence You Can Trust",
+    "market_intelligence_desc": "Our insights are backed by real-time data and deep industry knowledge, helping you make informed decisions in a volatile trading environment.",
+    "client_focused_title": "Client-Focused Partnerships",
+    "client_focused_desc": "Your goals drive our strategy. We tailor solutions to your specific needs, offering flexibility, responsiveness, and dedicated support.",
+    "sustainability_title": "Sustainability Throughout the Supply Chain",
+    "sustainability_desc": "We promote responsible sourcing and logistics practices, working to reduce environmental impact while maintaining operational efficiency.",
+    "explore_services": "Explore Our Energy Trading Services",
+    "explore_services_desc": "Discover efficient and secure fuel trading solutions. Benefit from our global network, strategic partnerships, and deep market expertise. Contact us today for tailored guidance and reliable support.",
+    "learn_more": "Learn More",
+    "contact_now": "Contact Now"
+  },
+  "servicios": {
+  "explore_services": "Explore our energy services",
+  "contact": "Contact",
+  "discover_services": "Discover Our Energy Services",
+  "supply_procurement": "Supply & Procurement",
+  "supply_procurement_desc": "We source fuel internationally—from refineries and traders—to secure competitive pricing and delivery reliability. We customize supply mixes to meet your technical and financial needs.",
+  "trading_risk": "Trading & Risk Management",
+  "trading_risk_desc": "Using advanced forecasting and market intelligence, we manage pricing risks and identify opportunities. Our trading team negotiates futures, swaps, and spot contracts to optimize outcomes.",
+  "logistics_delivery": "Logistics & Delivery Coordination",
+  "logistics_delivery_desc": "We manage storage, shipping, rail, trucking, and terminal logistics—overseeing scheduling, customs, inspections, insurance, and delivery confirmation so you don't have to.",
+  "compliance_quality": "Compliance & Quality Assurance",
+  "compliance_quality_desc": "Our protocols ensure that every shipment meets global fuel standards. From testing to regulatory filings, we maintain full transparency and traceability.",
+  "strategic_advisory": "Strategic Advisory",
+  "strategic_advisory_desc": "We offer market insights, pricing forecasts, regulatory guidance, and hedging strategies to help you navigate volatile energy markets confidently.",
+  "products": "Products",
+  "trusted_source": "Your trusted energy source in Madrid, Spain.",
+  "gasoil_a": "Diesel A",
+  "gasoil_b": "Diesel B",
+  "gasoil_c": "Diesel C",
+  "gasoline_95": "Gasoline 95",
+  "gasoil_a_desc": "Diesel fuel mainly intended for agricultural, industrial, and maritime uses. Widely used in agricultural machinery such as tractors, harvesters, and irrigation engines, as well as in construction equipment and power generation. Its formulation is designed to offer energy efficiency at a reduced cost, making it ideal for professional applications that require reliable performance.",
+  "gasoil_b_desc": "Diesel fuel mainly intended for agricultural, industrial, and maritime uses. Widely used in agricultural machinery such as tractors, harvesters, and irrigation engines, as well as in construction equipment and power generation. Its formulation is designed to offer energy efficiency at a reduced cost, making it ideal for professional applications that require reliable performance.",
+  "gasoil_c_desc": "Diesel C, also known as heating oil, is designed for heating systems in residential, commercial, and industrial sectors. It is used in boilers and furnaces for building climate control and hot water generation. It is also used in agricultural and livestock environments, such as greenhouse and farm heating. Its high calorific value makes it an efficient and economical option for intensive heating needs.",
+  "gasoline_95_desc": "Gasoline 95, known as unleaded gasoline, is a petroleum-derived fuel designed for light vehicle engines such as cars and motorcycles. Its octane rating ensures high performance, making it ideal for standard engines. Its reduced content of polluting compounds, such as lead, promotes cleaner combustion, helping to reduce emissions and protect the environment, while ensuring efficient and reliable driving.",
+  "trust_experience": "Trust in Our Expertise",
+  "discover_range": "At Dux Ventures, we specialize in fuel trading solutions tailored to meet the dynamic demands of the global energy market. Rely on our industry insight and strategic approach to navigate supply and demand with confidence."
+}
 }
