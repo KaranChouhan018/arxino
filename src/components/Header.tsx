@@ -35,7 +35,7 @@ const Header: React.FC = () => {
               <div className="wp-block-site-logo">
                 <Link href="/" aria-current="page" className="custom-logo-link">
                   <Image
-                    width={150}
+                    width={100}
                     height={100}
                     src="/images/logo.png"
                     className="custom-logo"
@@ -53,7 +53,7 @@ const Header: React.FC = () => {
                 className="wp-block-site-title has-medium-font-size"
               >
                 <Link href="/" aria-current="page" className="site-title-link">
-                  Dux Ventures
+                  Dvx Ventures
                 </Link>
               </h1>
             </div>
