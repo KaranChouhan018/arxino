@@ -456,7 +456,7 @@ const page: React.FC = () => {
                 <div className="wp-block-button is-style-outline is-style-outline--523ac244bd2d9fe9516de58f9217abc3">
                   <Link
                     className="wp-block-button__link wp-element-button"
-                    href="/servicios"
+                    href="/"
                   >
                     {t("learn_more")}
                   </Link>
@@ -465,7 +465,7 @@ const page: React.FC = () => {
                 <div className="wp-block-button">
                   <Link
                     className="wp-block-button__link has-background wp-element-button"
-                    href="/servicios"
+                    href="/"
                     style={{ backgroundColor: "#000000" }}
                   >
                     {t("contact_now")}

@@ -68,7 +68,7 @@ const Hero: React.FC = () => {
                   <div className="wp-block-button">
                     <a
                       className="wp-block-button__link has-text-color has-background has-link-color wp-element-button"
-                      href="/servicios"
+                      href="/"
                       style={{ color: "#111111", backgroundColor: "#fcfcfc" }}
                     >
                       <strong>{t('hero.cta')}</strong>
@@ -133,7 +133,7 @@ const Hero: React.FC = () => {
                   <div className="wp-block-button">
                     <a
                       className="wp-block-button__link wp-element-button"
-                      href="/servicios"
+                      href="/"
                     >
                       {t('about.services_button')}
                     </a>
@@ -233,7 +233,7 @@ const Hero: React.FC = () => {
             <div className="wp-block-button">
               <a
                 className="wp-block-button__link wp-element-button"
-                href="/servicios"
+                href="/"
               >
                 {t('trajectory.cta')}
               </a>

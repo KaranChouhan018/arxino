@@ -60,7 +60,7 @@ const page: React.FC = () => {
                       <div className="wp-block-button has-custom-font-size has-small-font-size">
                         <a
                           className="wp-block-button__link wp-element-button"
-                          href="/servicios"
+                          href="/"
                         >
                           {t("contact")}
                         </a>
