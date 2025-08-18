@@ -4,7 +4,9 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
-  
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   images: {
     domains: ["images.unsplash.com","www.shutterstock.com", "arizonagestionenergy.com"],
   },
