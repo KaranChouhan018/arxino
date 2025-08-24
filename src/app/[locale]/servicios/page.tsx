@@ -3,7 +3,6 @@ import Header from "@/src/components/Header";
 import Footer from "@/src/components/Footer";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { useTranslations } from "next-intl";
 
 const page: React.FC = () => {
   const t = useTranslations("servicios");
@@ -55,7 +54,6 @@ const page: React.FC = () => {
                   >
                     <h1 className="wp-block-heading alignwide has-text-align-left">
                       {t("explore_services")}
-                      {t("explore_services")}
                     </h1>
                     <div
                       className="wp-block-buttons is-content-justification-left is-layout-flex wp-container-core-buttons-is-layout-1 wp-block-buttons-is-layout-flex"
@@ -66,7 +64,6 @@ const page: React.FC = () => {
                           className="wp-block-button__link wp-element-button"
                           href={`/${locale}/contacto`}
                         >
-                          {t("contact")}
                           {t("contact")}
                         </a>
                       </div>
@@ -102,7 +99,6 @@ const page: React.FC = () => {
             <div className="wp-block-group alignwide has-global-padding is-content-justification-left is-layout-constrained wp-container-core-group-is-layout-11 wp-block-group-is-layout-constrained">
               <h2 className="!inline-block wp-block-heading has-large-font-size">
                 {t("discover_services")}
-                {t("discover_services")}
               </h2>
             </div>
             <div className="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-3 wp-block-columns-is-layout-flex">
@@ -124,10 +120,8 @@ const page: React.FC = () => {
                       }}
                     >
                       {t("supply_procurement")}
-                      {t("supply_procurement")}
                     </h3>
                     <p className="has-small-font-size" style={{ marginTop: 8 }}>
-                      {t("supply_procurement_desc")}
                       {t("supply_procurement_desc")}
                     </p>
                   </div>
@@ -144,10 +138,8 @@ const page: React.FC = () => {
                       }}
                     >
                       {t("trading_risk")}
-                      {t("trading_risk")}
                     </h3>
                     <p className="has-small-font-size" style={{ marginTop: 8 }}>
-                      {t("trading_risk_desc")}
                       {t("trading_risk_desc")}
                     </p>
                   </div>
@@ -184,33 +176,11 @@ const page: React.FC = () => {
                       }}
                     >
                       {t("compliance_quality")}
-                      {t("logistics_delivery")}
-                    </h3>
-                    <p className="has-small-font-size" style={{ marginTop: 8 }}>
-                      {t("logistics_delivery_desc")}
-                    </p>
-                  </div>
-                  <div
-                    className="wp-block-column has-background-background-color has-background is-layout-flow wp-block-column-is-layout-flow"
-                    style={{ padding: "1.5rem" }}
-                  >
-                    <h3
-                      className="wp-block-heading"
-                      style={{
-                        fontSize:
-                          "clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.625), 20px)",
-                        lineHeight: 1.5,
-                      }}
-                    >
-                      {t("compliance_quality")}
                     </h3>
                     <p className="has-small-font-size" style={{ marginTop: 8 }}>
                       {t("compliance_quality_desc")}
-                      {t("compliance_quality_desc")}
                     </p>
                   </div>
-                </div>
-                <div className="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-2 wp-block-columns-is-layout-flex">
                 </div>
                 <div className="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-2 wp-block-columns-is-layout-flex">
                   <div
@@ -226,10 +196,8 @@ const page: React.FC = () => {
                       }}
                     >
                       {t("strategic_advisory")}
-                      {t("strategic_advisory")}
                     </h3>
                     <p className="has-small-font-size" style={{ marginTop: 8 }}>
-                      {t("strategic_advisory_desc")}
                       {t("strategic_advisory_desc")}
                     </p>
                   </div>
@@ -269,10 +237,8 @@ const page: React.FC = () => {
             <div className="wp-block-group alignwide has-global-padding is-content-justification-left is-layout-constrained wp-container-core-group-is-layout-13 wp-block-group-is-layout-constrained">
               <h2 className="!inline-block wp-block-heading has-large-font-size">
                 {t("products")}
-                {t("products")}
               </h2>
               <p style={{ marginTop: 16 }} className="!mx-0">
-                {t("trusted_source")}
                 {t("trusted_source")}
               </p>
             </div>
@@ -333,10 +299,8 @@ const page: React.FC = () => {
                   }}
                 >
                   <strong>{t("gasoil_a")}</strong>
-                  <strong>{t("gasoil_a")}</strong>
                 </h3>
                 <p className="has-small-font-size" style={{ marginTop: 12 }}>
-                  {t("gasoil_a_desc")}
                   {t("gasoil_a_desc")}
                 </p>
               </div>
@@ -398,10 +362,8 @@ const page: React.FC = () => {
                   }}
                 >
                   <strong>{t("gasoil_b")}</strong>
-                  <strong>{t("gasoil_b")}</strong>
                 </h3>
                 <p className="has-small-font-size" style={{ marginTop: 12 }}>
-                  {t("gasoil_b_desc")}
                   {t("gasoil_b_desc")}
                 </p>
               </div>
@@ -464,10 +426,8 @@ const page: React.FC = () => {
                   }}
                 >
                   <strong>{t("gasoil_c")}</strong>
-                  <strong>{t("gasoil_c")}</strong>
                 </h3>
                 <p className="has-small-font-size" style={{ marginTop: 12 }}>
-                  {t("gasoil_c_desc")}
                   {t("gasoil_c_desc")}
                 </p>
               </div>
@@ -530,10 +490,8 @@ const page: React.FC = () => {
                   }}
                 >
                   <strong>{t("gasoline_95")}</strong>
-                  <strong>{t("gasoline_95")}</strong>
                 </h3>
                 <p className="has-small-font-size" style={{ marginTop: 12 }}>
-                  {t("gasoline_95_desc")}
                   {t("gasoline_95_desc")}
                 </p>
               </div>
@@ -576,13 +534,11 @@ const page: React.FC = () => {
                     style={{ color: "#fffffffc" }}
                   >
                     {t("trust_experience")}
-                    {t("trust_experience")}
                   </h1>
                   <p
                     className="has-text-align-center has-text-color"
                     style={{ color: "#fffffffc", marginTop: 16 }}
                   >
-                    {t("discover_range")}
                     {t("discover_range")}
                   </p>
                 </div>
