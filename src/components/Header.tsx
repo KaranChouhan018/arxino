@@ -38,16 +38,13 @@ const Header: React.FC = () => {
                     width={100}
                     height={100}
                     src="/images/logo.png"
-                    width={100}
-                    height={100}
-                    src="/images/logo.png"
+      
                     className="custom-logo"
                     alt="Arizona Gestión Energy"
                     decoding="async"
                     data-nimg="1"
                     
-                    data-nimg="1"
-                    
+             
                   />
                 </Link>
               </div>
