@@ -38,9 +38,14 @@ const Header: React.FC = () => {
                     width={100}
                     height={100}
                     src="/images/logo.png"
+                    width={100}
+                    height={100}
+                    src="/images/logo.png"
                     className="custom-logo"
                     alt="Arizona Gestión Energy"
                     decoding="async"
+                    data-nimg="1"
+                    
                     data-nimg="1"
                     
                   />
@@ -86,7 +91,7 @@ const Header: React.FC = () => {
               </button>
 
               {isLangMenuOpen && (
-                <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg border border-gray-200 z-50">
+                <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg  border border-gray-200 z-50">
                   {languages.map((lang) => (
                     <Link
                       key={lang.code}
@@ -246,7 +251,7 @@ const Header: React.FC = () => {
           <div className="relative">
             <button
               onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
-              className="flex items-center space-x-2 px-3 py-2 rounded-md hover:bg-gray-100 transition-colors"
+              className="flex items-center  space-x-2 px-3 py-2 rounded-md hover:bg-gray-100 transition-colors"
             >
               <Globe className="w-4 h-4" />
               <span className="text-sm font-medium">

@@ -5,6 +5,7 @@ import Header from "@/src/components/Header";
 import Footer from "@/src/components/Footer";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 
 const page: React.FC = () => {
   const t = useTranslations("sobre");
@@ -66,8 +67,11 @@ const page: React.FC = () => {
                     style={{ color: "#fffffffc" }}
                   >
                     {t("hero_title")}
+                    {t("hero_title")}
                   </h1>
 
+                  <p className="has-text-align-center has-text-color" style={{ color: "#fffffffc" }}>
+                    {t("hero_description")}
                   <p className="has-text-align-center has-text-color" style={{ color: "#fffffffc" }}>
                     {t("hero_description")}
                   </p>
@@ -134,12 +138,14 @@ const page: React.FC = () => {
                 >
                   <h2 className="wp-block-heading has-large-font-size">
                     <strong>{t("who_we_are")}</strong>
+                    <strong>{t("who_we_are")}</strong>
                   </h2>
 
                   <p
                     className="has-text-align-left"
                     style={{ marginTop: "16px" }}
                   >
+                    {t("who_we_are_desc1")}
                     {t("who_we_are_desc1")}
                   </p>
 
@@ -148,12 +154,14 @@ const page: React.FC = () => {
                     style={{ marginTop: "16px" }}
                   >
                     {t("who_we_are_desc2")}
+                    {t("who_we_are_desc2")}
                   </p>
 
                   <p
                     className="has-text-align-left"
                     style={{ marginTop: "16px" }}
                   >
+                    {t("who_we_are_desc3")}
                     {t("who_we_are_desc3")}
                   </p>
                 </div>
@@ -207,6 +215,7 @@ const page: React.FC = () => {
                         <figure className="wp-block-image size-large is-resized ext-aspect-landscape wp-duotone-df620e-ccc-2">
                           <Image
                             src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48bWFzayBpZD0iYSIgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiB4PSIwIiB5PSIwIiBtYXNrVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBzdHlsZT0ibWFzay10eXBlOmFscGhhIj48cGF0aCBmaWxsPSIjRDlEOUQ5IiBkPSJNMCAwaDQ4djQ4SDB6Ii8+PC9tYXNrPjxnIG1hc2s9InVybCgjYSkiPjxwYXRoIGZpbGw9IiMxQzFCMUYiIGQ9Ik0yNCA0NGMtMi44MzMgMC01LjQ2Ny0uNTA4LTcuOS0xLjUyNS0yLjQzMy0xLjAxNy00LjU1LTIuNDI1LTYuMzUtNC4yMjUtMS44LTEuOC0zLjIwOC0zLjkxNy00LjIyNS02LjM1QzQuNTA4IDI5LjQ2NyA0IDI2LjgzMyA0IDI0YzAtMi44LjUwOC01LjQxNyAxLjUyNS03Ljg1UzcuOTUgMTEuNiA5Ljc1IDkuOGMxLjgtMS44IDMuOTE3LTMuMjE3IDYuMzUtNC4yNVMyMS4xNjcgNCAyNCA0YzIuNSAwIDQuODMzLjQgNyAxLjIgMi4xNjcuOCA0LjExNyAxLjkgNS44NSAzLjNsLTIuMTUgMi4xNWExNi43MzIgMTYuNzMyIDAgMCAwLTQuOS0yLjdDMjggNy4zMTcgMjYuMDY3IDcgMjQgN2MtNC44MzMgMC04Ljg3NSAxLjYyNS0xMi4xMjUgNC44NzVTNyAxOS4xNjcgNyAyNHMxLjYyNSA4Ljg3NSA0Ljg3NSAxMi4xMjVTMTkuMTY3IDQxIDI0IDQxczguODc1LTEuNjI1IDEyLjEyNS00Ljg3NVM0MSAyOC44MzMgNDEgMjRjMC0xLS4wNzUtMS45NzUtLjIyNS0yLjkyNS0uMTUtLjk1LS4zNzUtMS44NzUtLjY3NS0yLjc3NWwyLjMtMi4zYTE5LjEyMiAxOS4xMjIgMCAwIDEgMS4yIDMuODVjLjI2NyAxLjMzMy40IDIuNzE3LjQgNC4xNSAwIDIuODMzLS41MTcgNS40NjctMS41NSA3LjktMS4wMzMgMi4zMzMtMi40NSA0LjU1LTQuMjUgNi4zNS0xLjggMS44LTMuOTE3IDMuMjA4LTYuMzUgNC4yMjVDMjkuNDE3IDQzLjQ5MiAyNi44IDQ0IDI0IDQ0Wm0tMi45NS0xMC45LTguMjUtOC4zIDIuMjUtMi4yNSA2IDYgMjAuNy0yMC43IDIuMyAyLjI1LTIzIDIzWiIvPjwvZz48L3N2Zz4="
+                            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48bWFzayBpZD0iYSIgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiB4PSIwIiB5PSIwIiBtYXNrVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBzdHlsZT0ibWFzay10eXBlOmFscGhhIj48cGF0aCBmaWxsPSIjRDlEOUQ5IiBkPSJNMCAwaDQ4djQ4SDB6Ii8+PC9tYXNrPjxnIG1hc2s9InVybCgjYSkiPjxwYXRoIGZpbGw9IiMxQzFCMUYiIGQ9Ik0yNCA0NGMtMi44MzMgMC01LjQ2Ny0uNTA4LTcuOS0xLjUyNS0yLjQzMy0xLjAxNy00LjU1LTIuNDI1LTYuMzUtNC4yMjUtMS44LTEuOC0zLjIwOC0zLjkxNy00LjIyNS02LjM1QzQuNTA4IDI5LjQ2NyA0IDI2LjgzMyA0IDI0YzAtMi44LjUwOC01LjQxNyAxLjUyNS03Ljg1UzcuOTUgMTEuNiA5Ljc1IDkuOGMxLjgtMS44IDMuOTE3LTMuMjE3IDYuMzUtNC4yNVMyMS4xNjcgNCAyNCA0YzIuNSAwIDQuODMzLjQgNyAxLjIgMi4xNjcuOCA0LjExNyAxLjkgNS44NSAzLjNsLTIuMTUgMi4xNWExNi43MzIgMTYuNzMyIDAgMCAwLTQuOS0yLjdDMjggNy4zMTcgMjYuMDY3IDcgMjQgN2MtNC44MzMgMC04Ljg3NSAxLjYyNS0xMi4xMjUgNC44NzVTNyAxOS4xNjcgNyAyNHMxLjYyNSA4Ljg3NSA0Ljg3NSAxMi4xMjVTMTkuMTY3IDQxIDI0IDQxczguODc1LTEuNjI1IDEyLjEyNS00Ljg3NVM0MSAyOC44MzMgNDEgMjRjMC0xLS4wNzUtMS45NzUtLjIyNS0yLjkyNS0uMTUtLjk1LS4zNzUtMS44NzUtLjY3NS0yLjc3NWwyLjMtMi4zYTE5LjEyMiAxOS4xMjIgMCAwIDEgMS4yIDMuODVjLjI2NyAxLjMzMy40IDIuNzE3LjQgNC4xNSAwIDIuODMzLS41MTcgNS40NjctMS41NSA3LjktMS4wMzMgMi4zMzMtMi40NSA0LjU1LTQuMjUgNi4zNS0xLjggMS44LTMuOTE3IDMuMjA4LTYuMzUgNC4yMjVDMjkuNDE3IDQzLjQ5MiAyNi44IDQ0IDI0IDQ0Wm0tMi45NS0xMC45LTguMjUtOC4zIDIuMjUtMi4yNSA2IDYgMjAuNy0yMC43IDIuMyAyLjI1LTIzIDIzWiIvPjwvZz48L3N2Zz4="
                             alt=""
                             width={57}
                             height={48}
@@ -227,6 +236,7 @@ const page: React.FC = () => {
                               className="has-inline-color has-primary-color"
                             >
                               {t("integrity_title")}
+                              {t("integrity_title")}
                             </mark>
                           </strong>
                         </p>
@@ -238,6 +248,7 @@ const page: React.FC = () => {
                         className="has-text-align-center has-small-font-size"
                         style={{ marginTop: "12px" }}
                       >
+                        {t("integrity_desc")}
                         {t("integrity_desc")}
                       </p>
                     </div>
@@ -266,6 +277,7 @@ const page: React.FC = () => {
                         <figure className="wp-block-image size-large is-resized ext-aspect-landscape wp-duotone-df620e-ccc-3">
                           <Image
                             src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48bWFzayBpZD0iYSIgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiB4PSIwIiB5PSIwIiBtYXNrVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBzdHlsZT0ibWFzay10eXBlOmFscGhhIj48cGF0aCBmaWxsPSIjRDlEOUQ5IiBkPSJNMCAwaDQ4djQ4SDB6Ii8+PC9tYXNrPjxnIG1hc2s9InVybCgjYSkiPjxwYXRoIGZpbGw9IiMxQzFCMUYiIGQ9Ik0yNCA0NGMtMi44MzMgMC01LjQ2Ny0uNTA4LTcuOS0xLjUyNS0yLjQzMy0xLjAxNy00LjU1LTIuNDI1LTYuMzUtNC4yMjUtMS44LTEuOC0zLjIwOC0zLjkxNy00LjIyNS02LjM1QzQuNTA4IDI5LjQ2NyA0IDI2LjgzMyA0IDI0YzAtMi44LjUwOC01LjQxNyAxLjUyNS03Ljg1UzcuOTUgMTEuNiA5Ljc1IDkuOGMxLjgtMS44IDMuOTE3LTMuMjE3IDYuMzUtNC4yNVMyMS4xNjcgNCAyNCA0YzIuNSAwIDQuODMzLjQgNyAxLjIgMi4xNjcuOCA0LjExNyAxLjkgNS44NSAzLjNsLTIuMTUgMi4xNWExNi43MzIgMTYuNzMyIDAgMCAwLTQuOS0yLjdDMjggNy4zMTcgMjYuMDY3IDcgMjQgN2MtNC44MzMgMC04Ljg3NSAxLjYyNS0xMi4xMjUgNC44NzVTNyAxOS4xNjcgNyAyNHMxLjYyNSA4Ljg3NSA4Ljg3NSAxMi4xMjVTMTkuMTY3IDQxIDI0IDQxczguODc1LTEuNjI1IDEyLjEyNS00Ljg3NVM0MSAyOC44MzMgNDEgMjRjMC0xLS4wNzUtMS45NzUtLjIyNS0yLjkyNS0uMTUtLjk1LS4zNzUtMS44NzUtLjY3NS0yLjc3NWwyLjMtMi4zYTE5LjEyMiAxOS4xMjIgMCAwIDEgMS4yIDMuODVjLjI2NyAxLjMzMy40IDIuNzE3LjQgNC4xNSAwIDIuODMzLS41MTcgNS40NjctMS41NSA3LjktMS4wMzMgMi44MzMtMi40NSA0LjU1LTQuMjUgNi4zNS0xLjggMS44LTMuOTE3IDMuMjA4LTYuMzUgNC4yMjVDMjkuNDE3IDQzLjQ5MiAyNi44IDQ0IDI0IDQ0Wm0tMi45NS0xMC45LTguMjUtOC4zIDIuMjUtMi4yNSA2IDYgMjAuNy0yMC43IDIuMyAyLjI1LTIzIDIzWiIvPjwvZz48L3N2Zz4="
+                            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48bWFzayBpZD0iYSIgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiB4PSIwIiB5PSIwIiBtYXNrVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBzdHlsZT0ibWFzay10eXBlOmFscGhhIj48cGF0aCBmaWxsPSIjRDlEOUQ5IiBkPSJNMCAwaDQ4djQ4SDB6Ii8+PC9tYXNrPjxnIG1hc2s9InVybCgjYSkiPjxwYXRoIGZpbGw9IiMxQzFCMUYiIGQ9Ik0yNCA0NGMtMi44MzMgMC01LjQ2Ny0uNTA4LTcuOS0xLjUyNS0yLjQzMy0xLjAxNy00LjU1LTIuNDI1LTYuMzUtNC4yMjUtMS44LTEuOC0zLjIwOC0zLjkxNy00LjIyNS02LjM1QzQuNTA4IDI5LjQ2NyA0IDI2LjgzMyA0IDI0YzAtMi44LjUwOC01LjQxNyAxLjUyNS03Ljg1UzcuOTUgMTEuNiA5Ljc1IDkuOGMxLjgtMS44IDMuOTE3LTMuMjE3IDYuMzUtNC4yNVMyMS4xNjcgNCAyNCA0YzIuNSAwIDQuODMzLjQgNyAxLjIgMi4xNjcuOCA0LjExNyAxLjkgNS44NSAzLjNsLTIuMTUgMi4xNWExNi43MzIgMTYuNzMyIDAgMCAwLTQuOS0yLjdDMjggNy4zMTcgMjYuMDY3IDcgMjQgN2MtNC44MzMgMC04Ljg3NSAxLjYyNS0xMi4xMjUgNC44NzVTNyAxOS4xNjcgNyAyNHMxLjYyNSA4Ljg3NSA4Ljg3NSAxMi4xMjVTMTkuMTY3IDQxIDI0IDQxczguODc1LTEuNjI1IDEyLjEyNS00Ljg3NVM0MSAyOC44MzMgNDEgMjRjMC0xLS4wNzUtMS45NzUtLjIyNS0yLjkyNS0uMTUtLjk1LS4zNzUtMS44NzUtLjY3NS0yLjc3NWwyLjMtMi4zYTE5LjEyMiAxOS4xMjIgMCAwIDEgMS4yIDMuODVjLjI2NyAxLjMzMy40IDIuNzE3LjQgNC4xNSAwIDIuODMzLS41MTcgNS40NjctMS41NSA3LjktMS4wMzMgMi44MzMtMi40NSA0LjU1LTQuMjUgNi4zNS0xLjggMS44LTMuOTE3IDMuMjA4LTYuMzUgNC4yMjVDMjkuNDE3IDQzLjQ5MiAyNi44IDQ0IDI0IDQ0Wm0tMi45NS0xMC45LTguMjUtOC4zIDIuMjUtMi4yNSA2IDYgMjAuNy0yMC43IDIuMyAyLjI1LTIzIDIzWiIvPjwvZz48L3N2Zz4="
                             alt=""
                             width={57}
                             height={48}
@@ -281,6 +293,7 @@ const page: React.FC = () => {
 
                         <h3 className="wp-block-heading has-text-align-center has-primary-color has-text-color has-large-font-size">
                           {t("market_intelligence_title")}
+                          {t("market_intelligence_title")}
                         </h3>
 
                         <div className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained"></div>
@@ -292,6 +305,7 @@ const page: React.FC = () => {
                         className="has-text-align-center has-small-font-size"
                         style={{ marginTop: "12px" }}
                       >
+                        {t("market_intelligence_desc")}
                         {t("market_intelligence_desc")}
                       </p>
                     </div>
@@ -418,6 +432,7 @@ const page: React.FC = () => {
                         style={{ marginTop: "12px" }}
                       >
                         {t("sustainability_desc")}
+                        {t("sustainability_desc")}
                       </p>
                     </div>
                   </div>
@@ -449,9 +464,11 @@ const page: React.FC = () => {
               <div className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
                 <h2 className="wp-block-heading has-large-font-size">
                   {t("explore_services")}
+                  {t("explore_services")}
                 </h2>
 
                 <p style={{ marginTop: "16px" }}>
+                  {t("explore_services_desc")}
                   {t("explore_services_desc")}
                 </p>
               </div>
@@ -461,7 +478,9 @@ const page: React.FC = () => {
                   <Link
                     className="wp-block-button__link wp-element-button"
                     href="/"
+                    href="/"
                   >
+                    {t("learn_more")}
                     {t("learn_more")}
                   </Link>
                 </div>
@@ -472,6 +491,7 @@ const page: React.FC = () => {
                     href={`/${locale}/contacto`}
                     style={{ backgroundColor: "#000000" }}
                   >
+                    {t("contact_now")}
                     {t("contact_now")}
                   </Link>
                 </div>

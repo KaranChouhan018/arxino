@@ -24,10 +24,11 @@
     "description": "Descubre soluciones energéticas eficientes con nosotros. Explora nuestra gama de combustibles y experimenta un servicio excepcional en España e Italia.",
     "more_info": "Más información"
   },
-  "trajectory": {
-    "title": "Nuestra Trayectoria y Compromiso en el Sector Energético",
-    "description": "Arizona Gestion Energy Sl, su aliado en combustibles en Madrid. Acceda a combustibles sólidos, líquidos y gaseosos de manera eficiente y confiable en toda España."
-  },
+ "trajectory": {
+  "title": "Nuestra Trayectoria y Compromiso en el Sector Energético",
+  "description": "Arizona Gestion Energy Sl, su aliado en combustibles en Madrid. Acceda a combustibles sólidos, líquidos y gaseosos de manera eficiente y confiable en toda España.",
+  "cta": "Contáctanos"
+},
   "footer": {
     "copyright": "© 2025 DVX VENTURES",
     "privacy_policy": "Política de privacidad",

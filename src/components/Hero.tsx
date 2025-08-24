@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
   
   return (
     <main
-      className="wp-block-group is-layout-flow wp-block-group-is-layout-flow"
+      className="wp-block-group is-layout-flow wp-block-group-is-layout-flow overflow-x-hidden"
       style={{ marginTop: 0, marginBottom: 0 }}
     >
       <div className="entry-content wp-block-post-content has-global-padding is-layout-constrained wp-block-post-content-is-layout-constrained">
@@ -67,6 +67,7 @@ const Hero: React.FC = () => {
                   style={{ marginTop: 12 }}
                 >
                   {t('hero.title')}
+                </h4>
                 </h4>
                 <div
                   className="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-1 wp-block-buttons-is-layout-flex"
@@ -121,7 +122,7 @@ const Hero: React.FC = () => {
                 <h2 className="wp-block-heading has-large-font-size">
                   {t('about.title')}
                 </h2>
-                <p className="has-text-align-left" style={{ lineHeight: 1.4 }}>
+                <p className="has-text-align-left">
                   {t('about.description1')}
                 </p>
                 <p className="has-text-align-left" style={{ lineHeight: 1.4 }}>
@@ -236,6 +237,16 @@ const Hero: React.FC = () => {
           <p className="has-text-align-center" style={{ marginTop: 16 }}>
             {t('trajectory.description')}
           </p>
+          <div className="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3 wp-block-buttons-is-layout-flex">
+            <div className="wp-block-button">
+              <a
+                className="wp-block-button__link wp-element-button"
+                href="/"
+              >
+                {t('trajectory.cta')}
+              </a>
+            </div>
+          </div>
         </div>
       </div>
       <p></p>
