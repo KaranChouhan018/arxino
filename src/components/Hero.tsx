@@ -1,9 +1,16 @@
+"use client";
 import React from "react";
 import Image from "next/image";
-import {useTranslations} from 'next-intl';
+import { useTranslations } from 'next-intl';
+import { useRouter } from 'next/navigation';
+import Link from 'next/link';
+
 
 const Hero: React.FC = () => {
   const t = useTranslations();
+  const router = useRouter();
+  // Next.js App Router does not provide locale directly, so fallback to window or default
+  const locale = typeof window !== 'undefined' ? window.location.pathname.split('/')[1] : 'es';
   
   return (
     <main
@@ -52,27 +59,27 @@ const Hero: React.FC = () => {
                 }}
               >
                 <p></p>
-                <h4 className="wp-block-heading has-text-align-center has-white-color has-text-color has-medium-font-size">
+                <h2 className="wp-block-heading has-text-align-center has-white-color has-text-color has-medium-font-size ">
                   <strong>{t('hero.subtitle')}</strong>
-                </h4>
-                <h1
-                  className="wp-block-heading alignwide has-text-align-center has-white-color has-text-color"
+                </h2>
+                <h4
+                  className="wp-block-heading alignwide has-text-align-center has-white-color has-text-color text-xl"
                   style={{ marginTop: 12 }}
                 >
                   {t('hero.title')}
-                </h1>
+                </h4>
                 <div
                   className="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-1 wp-block-buttons-is-layout-flex"
                   style={{ marginTop: "var(--wp--preset--spacing--40)" }}
                 >
                   <div className="wp-block-button">
-                    <a
+                    <Link
+                      href={`/${locale}/contacto`}
                       className="wp-block-button__link has-text-color has-background has-link-color wp-element-button"
-                      href="/contacto"
                       style={{ color: "#111111", backgroundColor: "#fcfcfc" }}
                     >
                       <strong>{t('hero.cta')}</strong>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -120,17 +127,23 @@ const Hero: React.FC = () => {
                 <p className="has-text-align-left" style={{ lineHeight: 1.4 }}>
                   {t('about.description2')}
                 </p>
+                <p className="has-text-align-left" style={{ lineHeight: 1.4 }}>
+                  {t('about.description3')}
+                </p>
+                <p className="has-text-align-left" style={{ lineHeight: 1.4 }}>
+                  {t('about.description4')}
+                </p>
                 <div
                   className="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex"
                   style={{ marginTop: "var(--wp--preset--spacing--40)" }}
                 >
                   <div className="wp-block-button">
-                    <a
+                    <Link
+                      href={`/${locale}/servicios`}
                       className="wp-block-button__link wp-element-button"
-                      href="/servicios"
                     >
                       {t('about.services_button')}
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -194,7 +207,7 @@ const Hero: React.FC = () => {
                       <div className="wp-block-button">
                         <a
                           className="wp-block-button__link wp-element-button"
-                          href="#extendify-career-cta"
+                          href={`/${locale}/sobre`}
                         >
                           {t('distribution.more_info')}
                         </a>

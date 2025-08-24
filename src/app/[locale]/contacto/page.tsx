@@ -128,8 +128,12 @@ const ContactPage: React.FC = () => {
                               >
                                 {t("info_title")}
                               </mark>
-                            </h2>
+                               <p className="has-inline-color has-primary-color w-100" style={{ fontSize: "18px", marginTop: "16px" }}>
+                              Ready to explore fuel sourcing solutions? <br /> Contact us for personalized assistance:
 
+                            </p>
+                            </h2>
+                           
                             <hr className="wp-block-separator alignwide has-alpha-channel-opacity is-style-wide" />
 
                             <p style={{ marginTop: "16px" }}></p>
@@ -201,7 +205,7 @@ const ContactPage: React.FC = () => {
                                             href="tel:+34608297125"
                                             className="hover:underline"
                                           >
-                                            +34 608297125
+                                             +34 600 000 000
                                           </Link>
                                         </p>
                                       </div>
@@ -234,10 +238,10 @@ const ContactPage: React.FC = () => {
                                     >
                                       <strong>{t("email")}.</strong>{" "}
                                       <Link
-                                        href="mailto:administración@arizonagestionenergy.com"
+                                        href="mailto:contacto@dvxventures.com"
                                         className="hover:underline"
                                       >
-                                        administración@arizonagestionenergy.com
+                                        contacto@dvxventures.com
                                       </Link>
                                     </p>
 

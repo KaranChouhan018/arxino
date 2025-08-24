@@ -33,15 +33,16 @@ const Header: React.FC = () => {
           <div className="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-3 wp-block-group-is-layout-flex">
             <div className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
               <div className="wp-block-site-logo">
-                <Link href="/" aria-current="page" className="custom-logo-link">
+                  <Link href="/" aria-current="page" className="custom-logo-link">
                   <Image
-                    width={322}
-                    height={111}
-                    src="/images/logo-arizona-s.jpeg"
+                    width={100}
+                    height={100}
+                    src="/images/logo.png"
                     className="custom-logo"
                     alt="Arizona Gestión Energy"
                     decoding="async"
-                    sizes="(max-width: 322px) 100vw, 322px"
+                    data-nimg="1"
+                    
                   />
                 </Link>
               </div>
@@ -52,14 +53,14 @@ const Header: React.FC = () => {
                 className="wp-block-site-title has-medium-font-size"
               >
                 <Link href="/" aria-current="page" className="site-title-link">
-                  Arizona Gestión Energy
+                  DVX VENTURES
                 </Link>
               </h1>
             </div>
           </div>
           <div className="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-4 wp-block-group-is-layout-flex">
             {/* Language Switcher */}
-            <div className="absolute right-12 top-5">
+            <div className="absolute right-12 top-5 hidden sm:block">
               <button
                 onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
                 className="flex items-center space-x-2 px-3 py-2 rounded-md hover:bg-gray-100 transition-colors"
@@ -134,8 +135,8 @@ const Header: React.FC = () => {
                   aria-hidden="true"
                   focusable="false"
                 >
-                  <rect x="4" y="7.5" width="16" height="1.5"></rect>
-                  <rect x="4" y="15" width="16" height="1.5"></rect>
+                  <rect x="4" y="7.5" width="20" height="1.5"></rect>
+                  <rect x="4" y="15" width="20" height="1.5"></rect>
                 </svg>
               </button>
               <div
@@ -181,7 +182,7 @@ const Header: React.FC = () => {
                             </span>
                           </Link>
                         </li>
-                        <li className="wp-block-navigation-item wp-block-navigation-link">
+                        {/* <li className="wp-block-navigation-item wp-block-navigation-link">
                           <Link
                             className="wp-block-navigation-item__content"
                             href="/equipo"
@@ -191,7 +192,7 @@ const Header: React.FC = () => {
                               <strong>{t("team")}</strong>
                             </span>
                           </Link>
-                        </li>
+                        </li> */}
                         <li className="wp-block-navigation-item wp-block-navigation-link">
                           <Link
                             className="wp-block-navigation-item__content"
@@ -203,7 +204,7 @@ const Header: React.FC = () => {
                             </span>
                           </Link>
                         </li>
-                        <li className="wp-block-navigation-item wp-block-navigation-link">
+                        {/* <li className="wp-block-navigation-item wp-block-navigation-link">
                           <Link
                             className="wp-block-navigation-item__content"
                             href="/noticias"
@@ -213,7 +214,7 @@ const Header: React.FC = () => {
                               <strong>{t("news")}</strong>
                             </span>
                           </Link>
-                        </li>
+                        </li> */}
                         <li className="wp-block-navigation-item wp-block-navigation-link">
                           <Link
                             className="wp-block-navigation-item__content"
@@ -313,13 +314,13 @@ const Header: React.FC = () => {
           >
             {t("about")}
           </Link>
-          <Link
+          {/* <Link
             href="/equipo"
             className="!no-underline"
             onClick={() => setIsMenuOpen(false)}
           >
             {t("team")}
-          </Link>
+          </Link> */}
           <Link
             href="/servicios"
             className="!no-underline"
@@ -327,13 +328,13 @@ const Header: React.FC = () => {
           >
             {t("services")}
           </Link>
-          <Link
+          {/* <Link
             href="/noticias"
             className="!no-underline"
             onClick={() => setIsMenuOpen(false)}
           >
             {t("news")}
-          </Link>
+          </Link> */}
           <Link
             href="/contacto"
             className="!no-underline"

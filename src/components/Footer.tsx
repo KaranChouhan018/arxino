@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
           ></div>
 
           <p className="!text-wrap">
-            <Link
+            {/* <Link
               href="https://arizonagestionenergy.com/sample-page/"
               target="_blank"
               rel="noopener noreferrer"
@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
             >
               {t("legal_notice")}
             </Link>{" "}
-            {" | "}{" "}
+            {" | "}{" "} */}
             <Link
               href="https://arizonagestionenergy.com/privacy-policy/"
               target="_blank"

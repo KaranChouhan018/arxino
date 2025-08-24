@@ -6,17 +6,19 @@
     "news": "Noticias",
     "contact": "Contacto"
   },
-  "hero": {
-    "subtitle": "Explora nuestras soluciones energéticas",
-    "title": "Excelencia en Suministro Energético",
+"hero": {
+    "subtitle": "Bienvenido a DVX Ventures",
+    "title": "En DVX Ventures, nos dedicamos a la excelencia en el comercio de combustibles—ofreciendo soluciones inteligentes y confiables de abastecimiento de energía a nivel global. Con profunda experiencia en el mercado, logística robusta e integridad como base, apoyamos a clientes industriales, distribuidores y grandes usuarios.",
     "cta": "Contáctanos"
   },
-  "about": {
-    "title": "Impulsa tu negocio con energía confiable",
-    "description1": "Dedicados a brindar excelencia en calidad y servicio.",
-    "description2": "Ofrecemos una amplia variedad de productos en casi todas las instalaciones de almacenamiento distribuidas por la red en España, tales como Exolum, Tepsa Bilbao,Tepsa Barcelona, Decal, DBA y Tradebe.",
-    "services_button": "Servicios"
-  },
+ "about": {
+  "title": "Impulsa tu negocio con energía confiable",
+  "description1": "Dedicados a brindar excelencia en calidad y servicio.",
+  "description2": "Ofrecemos una amplia variedad de productos en casi todas las instalaciones de almacenamiento distribuidas por la red en España, tales como Exolum, Tepsa Bilbao,Tepsa Barcelona, Decal, DBA y Tradebe.",
+  "description3": "Operaciones transparentes: Precios claros, gestión de riesgos y cumplimiento normativo.",
+  "description4": "Logística confiable: Desde la terminal hasta la entrega, garantizamos una distribución puntual.",
+  "services_button": "Servicios"
+},
   "distribution": {
     "title": "Distribución de Hidrocarburos",
     "description": "Descubre soluciones energéticas eficientes con nosotros. Explora nuestra gama de combustibles y experimenta un servicio excepcional en España e Italia.",
@@ -27,18 +29,63 @@
     "description": "Arizona Gestion Energy Sl, su aliado en combustibles en Madrid. Acceda a combustibles sólidos, líquidos y gaseosos de manera eficiente y confiable en toda España."
   },
   "footer": {
-    "copyright": "© 2024 Arizona Gestión Energy S.L.",
-    "legal_notice": "Aviso legal",
+    "copyright": "© 2025 DVX VENTURES",
     "privacy_policy": "Política de privacidad",
-    "cookies_policy": "Política de cookies"
+    "cookies_policy": "cookies"
   },
   "contact": {
     "title": "Contacto",
-    "info_title": "Información de contacto",
+    "info_title": "ponte en contacto",
     "address": "Dirección",
     "address_value": "C/ Velazquez 3, 3º, 28009 Madrid",
     "phone": "Teléfono",
     "email": "Email",
-    "description": "En Arizona Gestión Energy, nos dedicamos a ofrecer soluciones energéticas integrales en el sector de los hidrocarburos. Con más de [X] años de experiencia, nos enfocamos en proporcionar un servicio eficiente, seguro y de alta calidad a nuestros clientes."
-  }
+    "description": "Le invitamos a solicitar un análisis de suministro sin compromiso, adaptado a sus necesidades"
+  },
+  "sobre": {
+    "hero_title": "Quiénes somos",
+    "hero_description": "DVX Ventures es una empresa dedicada al comercio de combustibles, combinando años de experiencia en mercados energéticos, logística y gestión de riesgos. Nuestro equipo une rigor analítico con capacidad operativa práctica.",
+    "who_we_are": "Quiénes somos",
+    "who_we_are_desc1": "Brindamos soluciones energéticas integrales en el sector de los hidrocarburos, especializados en la comercialización eficiente y segura de productos diésel y gasolina.",
+    "who_we_are_desc2": "Nuestro equipo multidisciplinario aporta años de experiencia en los mercados europeos e internacionales de hidrocarburos, así como en logística de importación. Nos define la innovación, flexibilidad y un enfoque proactivo en una industria en constante evolución.",
+    "who_we_are_desc3": "Nos comprometemos a garantizar un suministro continuo, seguro y confiable de hidrocarburos, adaptando nuestros servicios a las necesidades únicas de cada cliente con un enfoque personalizado y de alta calidad.",
+    "integrity_title": "Integridad en cada transacción",
+    "integrity_desc": "Mantenemos la transparencia y los estándares éticos en cada operación, asegurando confianza y relaciones a largo plazo en el mercado energético global.",
+    "market_intelligence_title": "Inteligencia de mercado confiable",
+    "market_intelligence_desc": "Nuestros análisis se respaldan con datos en tiempo real y profundo conocimiento del sector, ayudándole a tomar decisiones informadas en un entorno de comercio volátil.",
+    "client_focused_title": "Alianzas centradas en el cliente",
+    "client_focused_desc": "Sus objetivos guían nuestra estrategia. Adaptamos soluciones a sus necesidades específicas, ofreciendo flexibilidad, respuesta rápida y soporte dedicado.",
+    "sustainability_title": "Sostenibilidad en toda la cadena de suministro",
+    "sustainability_desc": "Promovemos prácticas responsables de abastecimiento y logística, trabajando para reducir el impacto ambiental mientras mantenemos la eficiencia operativa.",
+    "explore_services": "Explora nuestros servicios de comercio energético",
+    "explore_services_desc": "Descubre soluciones eficientes y seguras para el comercio de combustibles. Benefíciate de nuestra red global, alianzas estratégicas y profundo conocimiento del mercado. Contáctanos hoy para recibir asesoramiento personalizado y soporte confiable.",
+    "learn_more": "Más información",
+    "contact_now": "Contactar ahora"
+  }, "servicios": {
+  "explore_services": "Explore nuestros servicios energéticos",
+  "contact": "Contactar",
+  "discover_services": "Descubre Nuestros Servicios Energéticos",
+  "supply_procurement": "Suministro y Adquisición",
+  "supply_procurement_desc": "Adquirimos combustible internacionalmente—de refinerías y comerciantes—para asegurar precios competitivos y fiabilidad en la entrega. Personalizamos las mezclas de suministro para satisfacer sus necesidades técnicas y financieras.",
+  "trading_risk": "Comercio y Gestión de Riesgos",
+  "trading_risk_desc": "Utilizando pronósticos avanzados e inteligencia de mercado, gestionamos riesgos de precios e identificamos oportunidades. Nuestro equipo negocia futuros, swaps y contratos al contado para optimizar resultados.",
+  "logistics_delivery": "Logística y Coordinación de Entregas",
+  "logistics_delivery_desc": "Gestionamos almacenamiento, transporte marítimo, ferroviario, camiones y logística de terminales—supervisando programación, aduanas, inspecciones, seguros y confirmación de entrega para que usted no tenga que hacerlo.",
+  "compliance_quality": "Cumplimiento y Garantía de Calidad",
+  "compliance_quality_desc": "Nuestros protocolos aseguran que cada envío cumpla con los estándares globales de combustible. Desde pruebas hasta trámites regulatorios, mantenemos total transparencia y trazabilidad.",
+  "strategic_advisory": "Asesoría Estratégica",
+  "strategic_advisory_desc": "Ofrecemos información de mercado, pronósticos de precios, orientación regulatoria y estrategias de cobertura para ayudarle a navegar con confianza en mercados energéticos volátiles.",
+  "products": "Productos",
+  "trusted_source": "Tu fuente confiable de energía en Madrid, España.",
+  "gasoil_a": "Gasóleo A",
+  "gasoil_b": "Gasóleo B",
+  "gasoil_c": "Gasóleo C",
+  "gasoline_95": "Gasolina 95",
+  "gasoil_a_desc": "Combustible diésel destinado principalmente a usos agrícolas, industriales y marítimos. Es ampliamente utilizado en maquinaria agrícola como tractores, cosechadoras y motores de riego, así como en equipos de construcción y generación de energía. Su formulación está diseñada para ofrecer eficiencia energética a un costo reducido, lo que lo hace ideal para aplicaciones profesionales que requieren un rendimiento confiable.",
+  "gasoil_b_desc": "Combustible diésel destinado principalmente a usos agrícolas, industriales y marítimos. Es ampliamente utilizado en maquinaria agrícola como tractores, cosechadoras y motores de riego, así como en equipos de construcción y generación de energía. Su formulación está diseñada para ofrecer eficiencia energética a un costo reducido, lo que lo hace ideal para aplicaciones profesionales que requieren un rendimiento confiable.",
+  "gasoil_c_desc": "El Gasóleo C, también conocido como gasóleo de calefacción, está diseñado para sistemas de calefacción en sectores residenciales, comerciales e industriales. Es utilizado en calderas y hornos para la climatización de edificios y la generación de agua caliente. Además, encuentra aplicaciones en entornos agrícolas y ganaderos, como la calefacción de invernaderos y granjas. Su alto poder calorífico lo convierte en una opción eficiente y económica para satisfacer necesidades de calefacción intensiva.",
+  "gasoline_95_desc": "La gasolina 95, conocida como gasolina sin plomo, es un combustible derivado del petróleo diseñado para motores de vehículos ligeros, como automóviles y motocicletas. Su octanaje garantiza un alto rendimiento, siendo ideal para motores estándar. Además, su composición reducida en compuestos contaminantes, como el plomo, favorece una combustión más limpia, contribuyendo a disminuir las emisiones y a proteger el medio ambiente, todo mientras asegura una conducción eficiente y confiable.",
+  "trust_experience": "Confía en nuestra experiencia",
+  "discover_range": "En Dux Ventures, nos especializamos en soluciones de comercio de combustibles adaptadas a las demandas dinámicas del mercado energético global. Confíe en nuestro conocimiento del sector y enfoque estratégico para navegar la oferta y la demanda con confianza."
+}
 }
