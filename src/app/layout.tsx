@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: "Dux Ventures",
   description: "Dux Ventures – Smart investments for a sustainable future",
   icons: {
-    icon: "https://img.icons8.com/ios-filled/50/__Fj5RBFxeJP/fire-hazard.png", // external Icons8 icon
+    icon: "https://img.icons8.com/ios-filled/50/__Fj5RBFxeJP/fire-hazard.png", 
   },
 };
 
