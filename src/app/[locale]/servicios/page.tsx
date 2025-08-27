@@ -12,7 +12,7 @@ const page: React.FC = () => {
       ? window.location.pathname.split("/")[1]
       : "es";
 
-      const steps = [
+  const steps = [
     { title: t("needs_title"), desc: t("needs_desc") },
     { title: t("market_study_title"), desc: t("market_study_desc") },
     { title: t("negotiation_title"), desc: t("negotiation_desc") },
@@ -52,33 +52,28 @@ const page: React.FC = () => {
               }}
             ></div>
             <div className="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
-              <div className="wp-block-group has-global-padding is-content-justification-center is-layout-constrained wp-block-group-is-layout-constrained">
-                <div className="wp-block-group alignwide has-global-padding is-content-justification-left is-layout-constrained wp-container-core-group-is-layout-8 wp-block-group-is-layout-constrained">
-                  <div
-                    className="!inline-block wp-block-group has-foreground-color has-tertiary-background-color has-text-color has-background has-link-color wp-elements-b3cd801b136c4b371fb8395973180997 has-global-padding is-content-justification-left is-layout-constrained wp-container-core-group-is-layout-7 wp-block-group-is-layout-constrained"
-                    style={{
-                      borderRadius: 4,
-                      paddingTop: "var(--wp--preset--spacing--40)",
-                      paddingRight: "var(--wp--preset--spacing--40)",
-                      paddingBottom: "var(--wp--preset--spacing--40)",
-                      paddingLeft: "var(--wp--preset--spacing--40)",
-                    }}
-                  >
-                    <h1 className="wp-block-heading alignwide has-text-align-left">
+              <div className="flex justify-center px-4">
+                <div className="w-full max-w-3xl">
+                  <div className="inline-block bg-gray-100 text-black rounded p-10 text-center">
+                    <h2 className="text-2xl w-[80%] mx-auto font-bold">
                       {t("explore_services")}
-                    </h1>
+                    </h2>
+
                     <div
-                      className="wp-block-buttons is-content-justification-left is-layout-flex wp-container-core-buttons-is-layout-1 wp-block-buttons-is-layout-flex"
+                      className=""
                       style={{ marginTop: "var(--wp--preset--spacing--30)" }}
                     >
+                      {" "}
                       <div className="wp-block-button has-custom-font-size has-small-font-size">
+                        {" "}
                         <a
                           className="wp-block-button__link wp-element-button"
                           href={`/${locale}/contacto`}
                         >
-                          {t("contact")}
-                        </a>
-                      </div>
+                          {" "}
+                          {t("contact")}{" "}
+                        </a>{" "}
+                      </div>{" "}
                     </div>
                   </div>
                 </div>
@@ -306,7 +301,6 @@ const page: React.FC = () => {
               </div>
             </div>
           </div>
-     
 
           <div
             className="wp-block-cover alignfull has-parallax"

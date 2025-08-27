@@ -87,8 +87,8 @@ const ContactPage: React.FC = () => {
                   data-object-fit="cover"
                 />
 
-                <section className="w-full  flex flex-col items-start py-12 px-6 md:px-12 z-20 relative">
-                  <div className=" bg-gray-200 px-6 py-2 md:px-12 md:py-6 text-center">
+                <section className="w-full  flex flex-col items-center py-12 px-6 md:px-12 z-20 relative">
+                  <div className=" bg-gray-200 max-w-6xl mx-auto px-6 py-2 md:px-12 md:py-6 text-center">
                     {/* Title + subtitle */}
                     <h2 className="text-3xl md:text-4xl font-bold text-primary">
                       {t("info_title")}
@@ -100,7 +100,7 @@ const ContactPage: React.FC = () => {
                     <div className="mx-auto mt-6  border-[0.1px] border-gray-700 w-full " />
 
                      {/* Contact Info Grid */}
-                  <div className="mt-12 grid gap-10 md:grid-cols-1  max-w-5xl mx-auto">
+                  <div className="mt-12 grid gap-10 md:grid-cols-3  items-center max-w-5xl mx-auto">
                     {/* Address */}
                     <div className="flex items-start gap-4">
                       <Image
@@ -160,10 +160,10 @@ const ContactPage: React.FC = () => {
                  
 
                   {/* Map */}
-                  <div className=" mt-12 overflow-hidden rounded-xl shadow-lg">
+                  <div className=" mt-12 overflow-hidden shadow-lg">
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.441197087945!2d-3.687299724140554!3d40.42122845536579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42294ad15b9295%3A0x85fa4f7dc389067e!2sC.%20de%20Vel%C3%A1zquez%2C%203%2C%20Salamanca%2C%2028001%20Madrid!5e0!3m2!1ses!2ses!4v1731410690397!5m2!1ses!2ses"
-                      className="w-[350px] md:w-[600px] h-[400px] border-0"
+                      className="w-[350px] md:w-[1120px] h-[400px] border-0"
                       loading="lazy"
                       allowFullScreen
                       referrerPolicy="no-referrer-when-downgrade"
@@ -171,8 +171,8 @@ const ContactPage: React.FC = () => {
                     />
                   </div>
                   {/* Footer description */}
-                  <p className="mt-6 text-center text-sm text-black ">
-                    {t("description")}
+                  <p className="mt-6 text-center text-md font-medium text-black ">
+                    {t("description")}{" ."}
                   </p>
                 </section>
               </div>

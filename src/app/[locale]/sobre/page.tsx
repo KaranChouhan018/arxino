@@ -206,7 +206,7 @@ const page: React.FC = () => {
                       className="wp-block-cover__background has-background-background-color has-background-dim-100 has-background-dim"
                     ></span>
                     <div className="wp-block-cover__inner-container has-global-padding is-layout-constrained wp-container-core-cover-is-layout-3 wp-block-cover-is-layout-constrained">
-                      <div className="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-11 wp-block-group-is-layout-flex">
+                      <div className="wp-block-group is-nowrap is-layout-flex flex-col wp-container-core-group-is-layout-11 wp-block-group-is-layout-flex">
                         <figure className="wp-block-image size-large is-resized ext-aspect-landscape wp-duotone-df620e-ccc-2">
                           <Image
                             src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48bWFzayBpZD0iYSIgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiB4PSIwIiB5PSIwIiBtYXNrVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBzdHlsZT0ibWFzay10eXBlOmFscGhhIj48cGF0aCBmaWxsPSIjRDlEOUQ5IiBkPSJNMCAwaDQ4djQ4SDB6Ii8+PC9tYXNrPjxnIG1hc2s9InVybCgjYSkiPjxwYXRoIGZpbGw9IiMxQzFCMUYiIGQ9Ik0yNCA0NGMtMi44MzMgMC01LjQ2Ny0uNTA4LTcuOS0xLjUyNS0yLjQzMy0xLjAxNy00LjU1LTIuNDI1LTYuMzUtNC4yMjUtMS44LTEuOC0zLjIwOC0zLjkxNy00LjIyNS02LjM1QzQuNTA4IDI5LjQ2NyA0IDI2LjgzMyA0IDI0YzAtMi44LjUwOC01LjQxNyAxLjUyNS03Ljg1UzcuOTUgMTEuNiA5Ljc1IDkuOGMxLjgtMS44IDMuOTE3LTMuMjE3IDYuMzUtNC4yNVMyMS4xNjcgNCAyNCA0YzIuNSAwIDQuODMzLjQgNyAxLjIgMi4xNjcuOCA0LjExNyAxLjkgNS44NSAzLjNsLTIuMTUgMi4xNWExNi43MzIgMTYuNzMyIDAgMCAwLTQuOS0yLjdDMjggNy4zMTcgMjYuMDY3IDcgMjQgN2MtNC44MzMgMC04Ljg3NSAxLjYyNS0xMi4xMjUgNC44NzVTNyAxOS4xNjcgNyAyNHMxLjYyNSA4Ljg3NSA0Ljg3NSAxMi4xMjVTMTkuMTY3IDQxIDI0IDQxczguODc1LTEuNjI1IDEyLjEyNS00Ljg3NVM0MSAyOC44MzMgNDEgMjRjMC0xLS4wNzUtMS45NzUtLjIyNS0yLjkyNS0uMTUtLjk1LS4zNzUtMS44NzUtLjY3NS0yLjc3NWwyLjMtMi4zYTE5LjEyMiAxOS4xMjIgMCAwIDEgMS4yIDMuODVjLjI2NyAxLjMzMy40IDIuNzE3LjQgNC4xNSAwIDIuODMzLS41MTcgNS40NjctMS41NSA3LjktMS4wMzMgMi4zMzMtMi40NSA0LjU1LTQuMjUgNi4zNS0xLjggMS44LTMuOTE3IDMuMjA4LTYuMzUgNC4yMjVDMjkuNDE3IDQzLjQ5MiAyNi44IDQ0IDI0IDQ0Wm0tMi45NS0xMC45LTguMjUtOC4zIDIuMjUtMi4yNSA2IDYgMjAuNy0yMC43IDIuMyAyLjI1LTIzIDIzWiIvPjwvZz48L3N2Zz4="
@@ -223,7 +223,7 @@ const page: React.FC = () => {
                           />
                         </figure>
 
-                        <p className="has-large-font-size text-center">
+                        {/* <h3 className="has-large-font-size text-center">
                           <strong>
                             <mark
                               style={{ backgroundColor: "rgba(0, 0, 0, 0)" }}
@@ -232,14 +232,17 @@ const page: React.FC = () => {
                               {t("integrity_title")}
                             </mark>
                           </strong>
-                        </p>
+                        </h3> */}
+                             <h3 className="wp-block-heading has-text-align-center has-primary-color has-text-color has-large-font-size">
+                              {t("integrity_title")}
+                        </h3>
                       </div>
 
                       <p className="has-text-align-center"></p>
 
                       <p
                         className="has-text-align-center has-small-font-size"
-                        style={{ marginTop: "12px" }}
+                        style={{ marginTop: "14px" }}
                       >
                         {t("integrity_desc")}
                       </p>
@@ -265,7 +268,7 @@ const page: React.FC = () => {
                       className="wp-block-cover__background has-background-background-color has-background-dim-100 has-background-dim"
                     ></span>
                     <div className="wp-block-cover__inner-container has-global-padding is-layout-constrained wp-container-core-cover-is-layout-4 wp-block-cover-is-layout-constrained">
-                      <div className="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-13 wp-block-group-is-layout-flex">
+                      <div className="wp-block-group is-nowrap is-layout-flex flex-col   wp-block-group-is-layout-flex">
                         <figure className="wp-block-image size-large is-resized ext-aspect-landscape wp-duotone-df620e-ccc-3">
                           <Image
                             src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48bWFzayBpZD0iYSIgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiB4PSIwIiB5PSIwIiBtYXNrVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBzdHlsZT0ibWFzay10eXBlOmFscGhhIj48cGF0aCBmaWxsPSIjRDlEOUQ5IiBkPSJNMCAwaDQ4djQ4SDB6Ii8+PC9tYXNrPjxnIG1hc2s9InVybCgjYSkiPjxwYXRoIGZpbGw9IiMxQzFCMUYiIGQ9Ik0yNCA0NGMtMi44MzMgMC01LjQ2Ny0uNTA4LTcuOS0xLjUyNS0yLjQzMy0xLjAxNy00LjU1LTIuNDI1LTYuMzUtNC4yMjUtMS44LTEuOC0zLjIwOC0zLjkxNy00LjIyNS02LjM1QzQuNTA4IDI5LjQ2NyA0IDI2LjgzMyA0IDI0YzAtMi44LjUwOC01LjQxNyAxLjUyNS03Ljg1UzcuOTUgMTEuNiA5Ljc1IDkuOGMxLjgtMS44IDMuOTE3LTMuMjE3IDYuMzUtNC4yNVMyMS4xNjcgNCAyNCA0YzIuNSAwIDQuODMzLjQgNyAxLjIgMi4xNjcuOCA0LjExNyAxLjkgNS44NSAzLjNsLTIuMTUgMi4xNWExNi43MzIgMTYuNzMyIDAgMCAwLTQuOS0yLjdDMjggNy4zMTcgMjYuMDY3IDcgMjQgN2MtNC44MzMgMC04Ljg3NSAxLjYyNS0xMi4xMjUgNC44NzVTNyAxOS4xNjcgNyAyNHMxLjYyNSA4Ljg3NSA4Ljg3NSAxMi4xMjVTMTkuMTY3IDQxIDI0IDQxczguODc1LTEuNjI1IDEyLjEyNS00Ljg3NVM0MSAyOC44MzMgNDEgMjRjMC0xLS4wNzUtMS45NzUtLjIyNS0yLjkyNS0uMTUtLjk1LS4zNzUtMS44NzUtLjY3NS0yLjc3NWwyLjMtMi4zYTE5LjEyMiAxOS4xMjIgMCAwIDEgMS4yIDMuODVjLjI2NyAxLjMzMy40IDIuNzE3LjQgNC4xNSAwIDIuODMzLS41MTcgNS40NjctMS41NSA3LjktMS4wMzMgMi44MzMtMi40NSA0LjU1LTQuMjUgNi4zNS0xLjggMS44LTMuOTE3IDMuMjA4LTYuMzUgNC4yMjVDMjkuNDE3IDQzLjQ5MiAyNi44IDQ0IDI0IDQ0Wm0tMi45NS0xMC45LTguMjUtOC4zIDIuMjUtMi4yNSA2IDYgMjAuNy0yMC43IDIuMyAyLjI1LTIzIDIzWiIvPjwvZz48L3N2Zz4="
@@ -289,7 +292,7 @@ const page: React.FC = () => {
                         <div className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained"></div>
                       </div>
 
-                      <p></p>
+      
 
                       <p
                         className="has-text-align-center has-small-font-size"
@@ -319,9 +322,9 @@ const page: React.FC = () => {
                       className="wp-block-cover__background has-background-background-color has-background-dim-100 md:has-background-dim h-auto has-background-dim"
                     ></span>
                     <div className="wp-block-cover__inner-container has-global-padding is-layout-constrained wp-container-core-cover-is-layout-5 wp-block-cover-is-layout-constrained">
-                      <div className="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-20 wp-block-group-is-layout-flex">
+                      <div className="wp-block-group is-nowrap is-layout-flex  wp-block-group-is-layout-flex">
                         <div className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                          <div className="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-14 wp-block-group-is-layout-flex">
+                          <div className="wp-block-group is-nowrap is-layout-flex flex-col  wp-container-core-group-is-layout-14 wp-block-group-is-layout-flex">
                             <figure className="wp-block-image size-large is-resized ext-aspect-landscape wp-duotone-df620e-ccc-4">
                               <Image
                                 src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48bWFzayBpZD0iYSIgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiB4PSIwIiB5PSIwIiBtYXNrVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBzdHlsZT0ibWFzay10eXBlOmFscGhhIj48cGF0aCBmaWxsPSIjRDlEOUQ5IiBkPSJNMCAwaDQ4djQ4SDB6Ii8+PC9tYXNrPjxnIG1hc2s9InVybCgjYSkiPjxwYXRoIGZpbGw9IiMxQzFCMUYiIGQ9Ik0yNCA0NGMtMi44MzMgMC01LjQ2Ny0uNTA4LTcuOS0xLjUyNS0yLjQzMy0xLjAxNy00LjU1LTIuNDI1LTYuMzUtNC4yMjUtMS44LTEuOC0zLjIwOC0zLjkxNy00LjIyNS02LjM1QzQuNTA4IDI5LjQ2NyA0IDI2LjgzMyA0IDI0YzAtMi44LjUwOC01LjQxNyAxLjUyNS03Ljg1UzcuOTUgMTEuNiA5Ljc1IDkuOGMxLjgtMS44IDMuOTE3LTMuMjE3IDYuMzUtNC4yNVMyMS4xNjcgNCAyNCA0YzIuNSAwIDQuODMzLjQgNyAxLjIgMi4xNjcuOCA0LjExNyAxLjkgNS44NSAzLjNsLTIuMTUgMi4xNWExNi43MzIgMTYuNzMyIDAgMCAwLTQuOS0yLjdDMjggNy4zMTcgMjYuMDY3IDcgMjQgN2MtNC44MzMgMC04Ljg3NSAxLjYyNS0xMi4xMjUgNC44NzVTNyAxOS4xNjcgNyAyNHMxLjYyNSA4Ljg3NSA0Ljg3NSAxMi4xMjVTMTkuMTY3IDQxIDI0IDQxczguODc1LTEuNjI1IDEyLjEyNS00Ljg3NVM0MSAyOC44MzMgNDEgMjRjMC0xLS4wNzUtMS45NzUtLjIyNS0yLjkyNS0uMTUtLjk1LS4zNzUtMS44NzUtLjY3NS0yLjc3NWwyLjMtMi4zYTE5LjEyMiAxOS4xMjIgMCAwIDEgMS4yIDMuODVjLjI2NyAxLjMzMy40IDIuNzE3LjQgNC4xNSAwIDIuODMzLS41MTcgNS40NjctMS41NSA3LjktMS4wMzMgMi44MzMtMi40NSA0LjU1LTQuMjUgNi4zNS0xLjggMS44LTMuOTE3IDMuMjA4LTYuMzUgNC4yMjVDMjkuNDE3IDQzLjQ5MiAyNi44IDQ0IDI0IDQ0Wm0tMi45NS0xMC45LTguMjUtOC4zIDIuMjUtMi4yNSA2IDYgMjAuNy0yMC43IDIuMyAyLjI1LTIzIDIzWiIvPjwvZz48L3N2Zz4="
@@ -384,7 +387,7 @@ const page: React.FC = () => {
                     <div className="wp-block-cover__inner-container has-global-padding is-layout-constrained wp-container-core-cover-is-layout-5 wp-block-cover-is-layout-constrained">
                       <div className="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-20 wp-block-group-is-layout-flex">
                         <div className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                          <div className="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-14 wp-block-group-is-layout-flex">
+                          <div className="wp-block-group is-nowrap is-layout-flex flex-col wp-container-core-group-is-layout-14 wp-block-group-is-layout-flex">
                             <figure className="wp-block-image size-large is-resized ext-aspect-landscape wp-duotone-df620e-ccc-4">
                               <Image
                                 src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDQ4IDQ4Ij48bWFzayBpZD0iYSIgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiB4PSIwIiB5PSIwIiBtYXNrVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBzdHlsZT0ibWFzay10eXBlOmFscGhhIj48cGF0aCBmaWxsPSIjRDlEOUQ5IiBkPSJNMCAwaDQ4djQ4SDB6Ii8+PC9tYXNrPjxnIG1hc2s9InVybCgjYSkiPjxwYXRoIGZpbGw9IiMxQzFCMUYiIGQ9Ik0yNCA0NGMtMi44MzMgMC01LjQ2Ny0uNTA4LTcuOS0xLjUyNS0yLjQzMy0xLjAxNy00LjU1LTIuNDI1LTYuMzUtNC4yMjUtMS44LTEuOC0zLjIwOC0zLjkxNy00LjIyNS02LjM1QzQuNTA4IDI5LjQ2NyA0IDI2LjgzMyA0IDI0YzAtMi44LjUwOC01LjQxNyAxLjUyNS03Ljg1UzcuOTUgMTEuNiA5Ljc1IDkuOGMxLjgtMS44IDMuOTE3LTMuMjE3IDYuMzUtNC4yNVMyMS4xNjcgNCAyNCA0YzIuNSAwIDQuODMzLjQgNyAxLjIgMi4xNjcuOCA0LjExNyAxLjkgNS44NSAzLjNsLTIuMTUgMi4xNWExNi43MzIgMTYuNzMyIDAgMCAwLTQuOS0yLjdDMjggNy4zMTcgMjYuMDY3IDcgMjQgN2MtNC44MzMgMC04Ljg3NSAxLjYyNS0xMi4xMjUgNC44NzVTNyAxOS4xNjcgNyAyNHMxLjYyNSA4Ljg3NSA0Ljg3NSAxMi4xMjVTMTkuMTY3IDQxIDI0IDQxczguODc1LTEuNjI1IDEyLjEyNS00Ljg3NVM0MSAyOC44MzMgNDEgMjRjMC0xLS4wNzUtMS45NzUtLjIyNS0yLjkyNS0uMTUtLjk1LS4zNzUtMS44NzUtLjY3NS0yLjc3NWwyLjMtMi4zYTE5LjEyMiAxOS4xMjIgMCAwIDEgMS4yIDMuODVjLjI2NyAxLjMzMy40IDIuNzE3LjQgNC4xNSAwIDIuODMzLS41MTcgNS40NjctMS41NSA3LjktMS4wMzMgMi44MzMtMi40NSA0LjU1LTQuMjUgNi4zNS0xLjggMS44LTMuOTE3IDMuMjA4LTYuMzUgNC4yMjVDMjkuNDE3IDQzLjQ5MiAyNi44IDQ0IDI0IDQ0Wm0tMi45NS0xMC45LTguMjUtOC4zIDIuMjUtMi4yNSA2IDYgMjAuNy0yMC43IDIuMyAyLjI1LTIzIDIzWiIvPjwvZz48L3N2Zz4="
@@ -427,6 +430,7 @@ const page: React.FC = () => {
                 </div>
               </div>
             </div>
+            
           </div>
 
           <div
