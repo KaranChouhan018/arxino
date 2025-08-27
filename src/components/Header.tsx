@@ -61,62 +61,65 @@ const Header: React.FC = () => {
             </div>
           </div>
           <div className="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-4 wp-block-group-is-layout-flex">
-            {/* Language Switcher */}
-            <div className="absolute right-12 top-5 hidden sm:block">
-              <button
-                onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
-                className="flex items-center space-x-2 px-3 py-2 rounded-md hover:bg-gray-100 transition-colors"
-                aria-label="Change language"
-              >
-                <Globe className="w-4 h-4" />
-                <span className="text-sm font-medium">
-                  {currentLanguage?.flag} {currentLanguage?.code.toUpperCase()}
-                </span>
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </button>
+           {/* Language Switcher */}
+<div className="absolute right-12 top-5 hidden sm:block">
+  <div className="relative"> {/* make this the positioning container */}
+    <button
+      onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
+      className="flex items-center space-x-2 px-3 py-2 rounded-md hover:bg-gray-100 transition-colors"
+      aria-label="Change language"
+    >
+      <Globe className="w-4 h-4" />
+      <span className="text-sm font-medium">
+        {currentLanguage?.flag} {currentLanguage?.code.toUpperCase()}
+      </span>
+      <svg
+        className="w-4 h-4"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M19 9l-7 7-7-7"
+        />
+      </svg>
+    </button>
 
-              {isLangMenuOpen && (
-                <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg  border border-gray-200 z-50">
-                  {languages.map((lang) => (
-                    <Link
-                      key={lang.code}
-                      href={pathname}
-                      locale={lang.code}
-                      className="flex items-center px-4 py-2 text-sm hover:bg-gray-100 transition-colors"
-                      onClick={() => setIsLangMenuOpen(false)}
-                    >
-                      <span className="mr-3">{lang.flag}</span>
-                      <span>{lang.name}</span>
-                      {locale === lang.code && (
-                        <svg
-                          className="w-4 h-4 ml-auto text-blue-600"
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                      )}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
+    {isLangMenuOpen && (
+      <div className="absolute right-0 mt-2 w-full   bg-white rounded-md shadow-lg border border-gray-200 z-50">
+        {languages.map((lang) => (
+          <Link
+            key={lang.code}
+            href={pathname}
+            locale={lang.code}
+            className="flex items-center px-4 py-2 text-sm hover:bg-gray-100 transition-colors"
+            onClick={() => setIsLangMenuOpen(false)}
+          >
+            <span className="mr-3">{lang.flag}</span>
+            <span>{lang.name}</span>
+            {locale === lang.code && (
+              <svg
+                className="w-4 h-4 ml-auto text-blue-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            )}
+          </Link>
+        ))}
+      </div>
+    )}
+  </div>
+</div>
+
 
             <nav
               className="is-responsive items-justified-right wp-block-navigation is-content-justification-right is-layout-flex wp-container-core-navigation-is-layout-1 wp-block-navigation-is-layout-flex"
@@ -237,114 +240,110 @@ const Header: React.FC = () => {
           </div>
         </div>
       </div>
-      {/* Mobile Slide-In Menu */}
-      <div
-        className={`fixed inset-0 z-50 bg-white transform ${
-          isMenuOpen ? "translate-x-0" : "translate-x-full"
-        } transition-transform duration-300 ease-in-out sm:hidden`}
+{/* Mobile Slide-In Menu */}
+<div
+  className={`fixed inset-0 z-50 bg-white transform ${
+    isMenuOpen ? "translate-x-0" : "translate-x-full"
+  } transition-transform duration-300 ease-in-out sm:hidden`}
+>
+  <div className="flex justify-between items-center p-4">
+    {/* Language Switcher in Mobile Menu */}
+    <div className="relative w-full">
+      <button
+        onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
+        className="flex items-center justify-between w-full px-3 py-2 rounded-md hover:bg-gray-100 transition-colors"
       >
-        <div className="flex justify-between items-center p-4">
-          {/* Language Switcher in Mobile Menu */}
-          <div className="relative">
-            <button
-              onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
-              className="flex items-center  space-x-2 px-3 py-2 rounded-md hover:bg-gray-100 transition-colors"
-            >
-              <Globe className="w-4 h-4" />
-              <span className="text-sm font-medium">
-                {currentLanguage?.flag} {currentLanguage?.code.toUpperCase()}
-              </span>
-            </button>
-
-            {isLangMenuOpen && (
-              <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg border border-gray-200 z-50">
-                {languages.map((lang) => (
-                  <Link
-                    key={lang.code}
-                    href={pathname}
-                    locale={lang.code}
-                    className="flex items-center px-4 py-2 text-sm hover:bg-gray-100 transition-colors"
-                    onClick={() => {
-                      setIsLangMenuOpen(false);
-                      setIsMenuOpen(false);
-                    }}
-                  >
-                    <span className="mr-3">{lang.flag}</span>
-                    <span>{lang.name}</span>
-                    {locale === lang.code && (
-                      <svg
-                        className="w-4 h-4 ml-auto text-blue-600"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    )}
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
-
-          <button onClick={() => setIsMenuOpen(false)} aria-label="Cerrar menú">
-            <svg
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              width="24"
-              height="24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </button>
+        <div className="flex items-center space-x-2">
+          <Globe className="w-4 h-4" />
+          <span className="text-sm font-medium">
+            {currentLanguage?.code.toUpperCase()}
+          </span>
         </div>
-        <nav className="flex flex-col items-end space-y-6 pr-8 pt-8 text-lg !decoration-none font-semibold">
-          <Link
-            href="/sobre"
-            className="!no-underline"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            {t("about")}
-          </Link>
-          {/* <Link
-            href="/equipo"
-            className="!no-underline"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            {t("team")}
-          </Link> */}
-          <Link
-            href="/servicios"
-            className="!no-underline"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            {t("services")}
-          </Link>
-          {/* <Link
-            href="/noticias"
-            className="!no-underline"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            {t("news")}
-          </Link> */}
-          <Link
-            href="/contacto"
-            className="!no-underline"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            {t("contact")}
-          </Link>
-        </nav>
+        <svg
+          className={`w-4 h-4 transform transition-transform ${
+            isLangMenuOpen ? "rotate-180" : ""
+          }`}
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M19 9l-7 7-7-7"
+          />
+        </svg>
+      </button>
+
+      {isLangMenuOpen && (
+        <div className="absolute left-0 right-0 mt-2 w-30 bg-white rounded-md shadow-lg border border-gray-200 z-50 max-h-60 overflow-y-auto">
+          {languages.map((lang) => (
+            <Link
+              key={lang.code}
+              href={pathname}
+              locale={lang.code}
+              className="flex items-center px-4 py-2 text-sm w-48 hover:bg-gray-100 transition-colors"
+              onClick={() => {
+                setIsLangMenuOpen(false);
+                setIsMenuOpen(false);
+              }}
+            >
+              <span className="mr-3">{lang.flag}</span>
+              <span>{lang.name}</span>
+              {locale === lang.code && (
+                <svg
+                  className="w-4 h-4 ml-auto text-blue-600"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              )}
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
+
+    {/* Close button */}
+    <button onClick={() => setIsMenuOpen(false)} aria-label="Cerrar menú">
+      <svg
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        width="24"
+        height="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M6 18L18 6M6 6l12 12"
+        />
+      </svg>
+    </button>
+  </div>
+
+  {/* Navigation links */}
+  <nav className="flex flex-col items-end space-y-6 pr-8 pt-8 text-lg font-semibold">
+    <Link href="/sobre" className="!no-underline" onClick={() => setIsMenuOpen(false)}>
+      {t("about")}
+    </Link>
+    <Link href="/servicios" className="!no-underline" onClick={() => setIsMenuOpen(false)}>
+      {t("services")}
+    </Link>
+    <Link href="/contacto" className="!no-underline" onClick={() => setIsMenuOpen(false)}>
+      {t("contact")}
+    </Link>
+  </nav>
+
+
       </div>
     </header>
   );
