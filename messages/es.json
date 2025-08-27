@@ -107,15 +107,15 @@
   "how_it_works_title": "CÓMO FUNCIONA",
   "how_it_works_subtitle": "CÓMO FUNCIONA",
   "how_it_works_desc": "Ofrecemos actualizaciones del mercado, análisis de riesgos y seguimiento operativo durante todo el período del contrato.",
-  "needs_title": "1. Entender sus necesidades",
+  "needs_title": "Entender sus necesidades",
   "needs_desc": "Indíquenos su tipo de combustible, volumen, frecuencia de entrega, especificaciones de calidad y métodos logísticos preferidos.",
-  "market_study_title": "2. Estudio de mercado y propuesta",
+  "market_study_title": " Estudio de mercado y propuesta",
   "market_study_desc": "Analizamos las condiciones actuales del mercado y presentamos opciones de abastecimiento a medida (contratos spot, a corto plazo, a plazo).",
-  "negotiation_title": "3. Negociación y ejecución de contratos",
+  "negotiation_title": " Negociación y ejecución de contratos",
   "negotiation_desc": "Nos encargamos de las negociaciones, la ejecución de las operaciones y todos los acuerdos contractuales para asegurar su suministro.",
-  "logistics_title": "4. Coordinación logística",
+  "logistics_title": " Coordinación logística",
   "logistics_desc": "Gestionamos toda la cadena de entrega: programación, transporte, almacenamiento, inspección y facturación.",
-  "support_title": "5. Soporte continuo",
+  "support_title": "Soporte continuo",
   "support_desc": "Proporcionamos actualizaciones del mercado, información sobre riesgos y seguimiento operativo durante todo el período del contrato."
 }
 }

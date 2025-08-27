@@ -37,17 +37,17 @@ const Footer: React.FC = () => {
             </Link>{" "}
             {" | "}{" "} */}
             <Link
-              href="https://arizonagestionenergy.com/privacy-policy/"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               data-type="link"
-              data-id="https://arizonagestionenergy.com/privacy-policy/"
+              data-id="#"
             >
               {t("privacy_policy")}
             </Link>{" "}
             {" | "}{" "}
             <Link
-              href="https://arizonagestionenergy.com/politica-de-cookies/"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
             >
