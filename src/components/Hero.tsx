@@ -233,9 +233,23 @@ const Hero: React.FC = () => {
           <h4 className="wp-block-heading has-text-align-center has-large-font-size">
             {t('trajectory.title')}
           </h4>
-          <p className="has-text-align-center" style={{ marginTop: 16  , width: '25%', marginLeft: 'auto', marginRight: 'auto' }}>
+          <p className="has-text-align-center w-full lg:w-[20%]" style={{ marginTop: 16  , marginLeft: 'auto', marginRight: 'auto' }}>
             {t('trajectory.description')}
           </p>
+               <div
+                  className="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-1 wp-block-buttons-is-layout-flex"
+                  style={{ marginTop: "var(--wp--preset--spacing--40)" }}
+                >
+                  <div className="wp-block-button">
+                    <Link
+                      href={`/${locale}/contacto`}
+                      className="wp-block-button__link has-text-color has-background has-link-color wp-element-button"
+                      style={{ color: "#111111", backgroundColor: "#fcfcfc" }}
+                    >
+                      <strong>{t('hero.cta')}</strong>
+                    </Link>
+                  </div>
+                </div>
         </div>
       </div>
       <p></p>

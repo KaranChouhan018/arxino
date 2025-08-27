@@ -1,3 +1,4 @@
+import Faq from "@/src/components/Faq";
 import Footer from "@/src/components/Footer";
 import Header from "@/src/components/Header";
 import Image from "next/image";
@@ -80,230 +81,106 @@ const ContactPage: React.FC = () => {
                   decoding="async"
                   width="2505"
                   height="2560"
-                  className="wp-block-cover__image-background wp-image-441"
+                  className="wp-block-cover__image-background wp-image-441 z-0"
                   alt=""
                   src="https://images.unsplash.com/photo-1587560699334-bea93391dcef?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   data-object-fit="cover"
                 />
-                <div className="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
-                  <div className="!flex-col !items-start wp-block-group alignfull is-vertical is-layout-flex wp-container-core-group-is-layout-30 wp-block-group-is-layout-flex">
-                    <div className="wp-block-group is-vertical is-layout-flex wp-container-core-group-is-layout-27 wp-block-group-is-layout-flex">
-                      <div className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                        <div className="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-2 wp-block-columns-is-layout-flex">
-                          <div
-                            className="wp-block-column is-layout-flow wp-block-column-is-layout-flow"
-                            style={{ flexBasis: "100%" }}
-                          >
-                            <div className="wp-block-group alignwide has-global-padding is-layout-constrained wp-block-group-is-layout-constrained"></div>
-                          </div>
-                        </div>
-                      </div>
 
-                      <div
-                        className="wp-block-columns alignwide are-vertically-aligned-center is-not-stacked-on-mobile has-background wp-container-content-3 is-layout-flex wp-container-core-columns-is-layout-3 wp-block-columns-is-layout-flex"
-                        style={{
-                          backgroundColor: "#e6e6e6",
-                          marginTop: 0,
-                          marginBottom: 0,
-                        }}
-                      >
-                        <div
-                          className="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow"
-                          style={{ flexBasis: "100%" }}
-                        >
-                          <div className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                            <h2
-                              className="wp-block-heading !text-nowrap alignfull has-text-align-center has-foreground-color has-text-color has-link-color wp-elements-e970e3495aabc359804681c0b10cb2c3"
-                              style={{
-                                marginTop: "var(--wp--preset--spacing--50)",
-                                marginRight: "var(--wp--preset--spacing--30)",
-                                marginBottom: "var(--wp--preset--spacing--50)",
-                                marginLeft: "var(--wp--preset--spacing--30)",
-                                lineHeight: 1.4,
-                              }}
-                            >
-                              <mark
-                                style={{ backgroundColor: "rgba(0, 0, 0, 0)" }}
-                                className="has-inline-color has-primary-color"
-                              >
-                                {t("info_title")}
-                              </mark>
-                               <p className="has-inline-color has-primary-color w-100" style={{ fontSize: "18px", marginTop: "16px" }}>
-                              Ready to explore fuel sourcing solutions? <br /> Contact us for personalized assistance:
+                <section className="w-full  flex flex-col items-start py-12 px-6 md:px-12 z-20 relative">
+                  <div className=" bg-gray-200 px-6 py-2 md:px-12 md:py-6 text-center">
+                    {/* Title + subtitle */}
+                    <h2 className="text-3xl md:text-4xl font-bold text-primary">
+                      {t("info_title")}
+                    </h2>
+                    <p className="mt-4 text-md md:text-lg text-gray-700">
+                      Ready to explore fuel sourcing solutions? <br />
+                      Contact us for personalized assistance:
+                    </p>
+                    <div className="mx-auto mt-6  border-[0.1px] border-gray-700 w-full " />
 
-                            </p>
-                            </h2>
-                           
-                            <hr className="wp-block-separator alignwide has-alpha-channel-opacity is-style-wide" />
-
-                            <p style={{ marginTop: "16px" }}></p>
-
-                            <div className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                              <div className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                                <div className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                                  <div className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                                    {/* Address Section */}
-                                    <div className="!justify-start wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-13 wp-block-group-is-layout-flex">
-                                      <div className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                                        <figure className="wp-block-image alignleft size-full is-resized ext-aspect-landscape wp-duotone-rgb15133229-ffffff-3">
-                                          <Image
-                                            width={549}
-                                            height={500}
-                                            src="https://arizonagestionenergy.com/wp-content/uploads/2024/11/Icono-arizona-direccion-.png"
-                                            
-                                            alt="Dirección icon"
-                                            className="wp-image-205"
-                                            style={{
-                                              objectFit: "cover",
-                                              width: "57px",
-                                              height: "auto",
-                                              filter: "hue-rotate(200deg) saturate(2)",
-                                            }}
-                                          />
-                                        </figure>
-                                      </div>
-
-                                      <div className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                                        <p className="has-primary-color has-text-color has-link-color has-small-font-size wp-elements-ff310899294439e3b4c509166ace9a2a">
-                                          <strong>{t("address")}. </strong>
-                                          {t("address_value")}
-                                        </p>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-
-                                <div className="wp-block-group is-layout-grid wp-container-core-group-is-layout-16 wp-block-group-is-layout-grid">
-                                  <p className="has-small-font-size wp-container-content-1"></p>
-                                </div>
-
-                                <div className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                                  <div className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                                    <div className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                                      {/* Phone Section */}
-                                      <div className="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-18 wp-block-group-is-layout-flex">
-                                        <div className="!justify-start wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                                          <figure className="wp-block-image alignleft size-full is-resized ext-aspect-landscape wp-duotone-unset-4">
-                                            <Image
-                                              width={512}
-                                              height={512}
-                                              src="https://arizonagestionenergy.com/wp-content/uploads/2024/11/Icono-arizona-telefono.png"
-                                              alt="Teléfono icon"
-                                              className="wp-image-206"
-                                              style={{
-                                                objectFit: "cover",
-                                                width: "51px",
-                                                height: "auto",
-                                              }}
-                                            />
-                                          </figure>
-                                        </div>
-
-                                        <p className="has-primary-color has-text-color has-link-color wp-elements-5f4b78846fc4b84276f710d8d0b5315f">
-                                          <strong>{t("phone")}</strong>.{" "}
-                                          <Link
-                                            href="tel:+34608297125"
-                                            className="hover:underline"
-                                          >
-                                             +34 600 000 000
-                                          </Link>
-                                        </p>
-                                      </div>
-                                    </div>
-                                    <p></p>
-                                  </div>
-
-                                  {/* Email Section */}
-                                  <div className="!flex !items-center">
-                                    <figure className="wp-block-image alignleft size-full is-resized ext-aspect-landscape wp-duotone-1f8cff-1c0a63-5">
-                                      <Image
-                                        width={512}
-                                        height={512}
-                                        src="https://arizonagestionenergy.com/wp-content/uploads/2024/11/icono-arizona-email-3.png"
-                                        alt="Email icon"
-                                        className="wp-image-211"
-                                        style={{
-                                          objectFit: "cover",
-                                          width: "57px",
-                                          height: "auto",
-                                          filter: "invert(24%) sepia(98%) saturate(7492%) hue-rotate(202deg) brightness(97%) contrast(101%)",
-                                          // Removed filter to fix blue tint
-                                        }}
-                                      />
-                                    </figure>
-
-                                    <p
-                                      className="has-text-align-center !mb-5 !text-nowrap has-primary-color has-text-color has-link-color wp-elements-6c93572ec24fe0b43d332b5c08c10edd"
-                                      style={{ marginTop: "0px" }}
-                                    >
-                                      <strong>{t("email")}.</strong>{" "}
-                                      <Link
-                                        href="mailto:contacto@dvxventures.com"
-                                        className="hover:underline"
-                                      >
-                                        contacto@dvxventures.com
-                                      </Link>
-                                    </p>
-
-                                    <div
-                                      style={{ height: "100px", width: "0px" }}
-                                      aria-hidden="true"
-                                      className="wp-block-spacer wp-container-content-2"
-                                    />
-                                  </div>
-                                </div>
-
-                                <div className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained"></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                      <div
-                        className="wp-block-group is-layout-flow wp-block-group-is-layout-flow"
-                        style={{
-                          paddingTop: "var(--wp--preset--spacing--30)",
-                          paddingRight: "var(--wp--preset--spacing--30)",
-                          paddingBottom: "var(--wp--preset--spacing--30)",
-                          paddingLeft: "var(--wp--preset--spacing--30)",
-                        }}
-                      >
-                        <iframe
-                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.441197087945!2d-3.687299724140554!3d40.42122845536579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42294ad15b9295%3A0x85fa4f7dc389067e!2sC.%20de%20Vel%C3%A1zquez%2C%203%2C%20Salamanca%2C%2028001%20Madrid!5e0!3m2!1ses!2ses!4v1731410690397!5m2!1ses!2ses"
-                          width="600"
-                          height="450"
-                          style={{ border: 0 }}
-                          allowFullScreen={true}
-                          loading="lazy"
-                          referrerPolicy="no-referrer-when-downgrade"
-                          title="Arizona Gestión Energy Location"
-                        />
-
-                        <p
-                          className="has-small-font-size"
-                          style={{ marginTop: "8px" }}
-                        >
-                          {t("description")}
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-4 wp-block-columns-is-layout-flex">
-                      <div
-                        className="wp-block-column is-layout-flow wp-block-column-is-layout-flow"
-                        style={{ flexBasis: "100%" }}
+                     {/* Contact Info Grid */}
+                  <div className="mt-12 grid gap-10 md:grid-cols-1  max-w-5xl mx-auto">
+                    {/* Address */}
+                    <div className="flex items-start gap-4">
+                      <Image
+                        src="https://arizonagestionenergy.com/wp-content/uploads/2024/11/Icono-arizona-direccion-.png"
+                        alt="Address icon"
+                        width={48}
+                        height={48}
+                        className="w-12 h-12 object-contain"
                       />
+                      <p className="text-sm text-gray-800">
+                        <strong>{t("address")}:</strong> {t("address_value")}
+                      </p>
+                    </div>
+
+                    {/* Phone */}
+                    <div className="flex items-start gap-4">
+                      <Image
+                        src="https://arizonagestionenergy.com/wp-content/uploads/2024/11/Icono-arizona-telefono.png"
+                        alt="Phone icon"
+                        width={48}
+                        height={48}
+                        className="w-12 h-12 object-contain"
+                      />
+                      <p className="text-sm text-gray-800">
+                        <strong>{t("phone")}:</strong>{" "}
+                        <a
+                          href="tel:+34608297125"
+                          className="text-blue-600 hover:underline"
+                        >
+                          +34 600 000 000
+                        </a>
+                      </p>
+                    </div>
+
+                    {/* Email */}
+                    <div className="flex items-start gap-4">
+                      <Image
+                        src="https://arizonagestionenergy.com/wp-content/uploads/2024/11/icono-arizona-email-3.png"
+                        alt="Email icon"
+                        width={48}
+                        height={48}
+                        className="w-12 h-12 object-contain"
+                      />
+                      <p className="text-sm text-gray-800">
+                        <strong>{t("email")}:</strong>{" "}
+                        <a
+                          href="mailto:contacto@dvxventures.com"
+                          className="text-blue-600 hover:underline"
+                        >
+                          contacto@dvxventures.com
+                        </a>
+                      </p>
                     </div>
                   </div>
-                </div>
+                  </div>
+
+                 
+
+                  {/* Map */}
+                  <div className=" mt-12 overflow-hidden rounded-xl shadow-lg">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.441197087945!2d-3.687299724140554!3d40.42122845536579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42294ad15b9295%3A0x85fa4f7dc389067e!2sC.%20de%20Vel%C3%A1zquez%2C%203%2C%20Salamanca%2C%2028001%20Madrid!5e0!3m2!1ses!2ses!4v1731410690397!5m2!1ses!2ses"
+                      className="w-[350px] md:w-[600px] h-[400px] border-0"
+                      loading="lazy"
+                      allowFullScreen
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="Arizona Gestión Energy Location"
+                    />
+                  </div>
+                  {/* Footer description */}
+                  <p className="mt-6 text-center text-sm text-black ">
+                    {t("description")}
+                  </p>
+                </section>
               </div>
             </div>
           </div>
         </div>
       </main>
+      <Faq />
       <Footer />
     </>
   );

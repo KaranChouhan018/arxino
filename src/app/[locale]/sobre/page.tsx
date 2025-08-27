@@ -15,7 +15,7 @@ const page: React.FC = () => {
     <>
       <Header />
       <main
-        className="wp-block-group is-layout-flow wp-block-group-is-layout-flow"
+        className="wp-block-group is-layout-flow wp-block-group-is-layout-flow overflow-x-hidden"
         style={{ marginTop: "0px", marginBottom: "0px" }}
       >
         <div className="entry-content wp-block-post-content has-global-padding is-layout-constrained wp-block-post-content-is-layout-constrained">
@@ -44,7 +44,7 @@ const page: React.FC = () => {
                 className="wp-block-cover__background has-black-background-color has-background-dim-60 has-background-dim"
               ></span>
               <div
-                className="wp-block-cover__image-background wp-image-29 has-parallax"
+                className="wp-block-cover__image-background wp-image-29 has-parallax rounded-xl"
                 style={{
                   backgroundPosition: "50% 50%",
                   backgroundImage:
@@ -76,6 +76,8 @@ const page: React.FC = () => {
             </div>
           </div>
 
+
+
           <div
             className="wp-block-group alignfull has-background-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-10 wp-block-group-is-layout-constrained"
             style={{
@@ -88,6 +90,46 @@ const page: React.FC = () => {
             }}
           >
             <div className="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex">
+              <div
+                className="wp-block-column is-layout-flow wp-block-column-is-layout-flow"
+                style={{
+                  paddingTop: "var(--wp--preset--spacing--40)",
+                  paddingBottom: "var(--wp--preset--spacing--40)",
+                  flexBasis: "50%",
+                }}
+              >
+                  <div>
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+        {t("clients_sectors_title")}
+      </h2>
+      <p className="text-gray-600 text-lg leading-relaxed mb-6">
+        {t("clients_sectors_desc")}
+      </p>
+
+      <ul className="space-y-3 text-gray-700 text-md">
+        <li className="flex items-start gap-2">
+          <span className="text-primary-600 mt-1">✔</span>
+          {t("clients_sectors_item1")}
+        </li>
+        <li className="flex items-start gap-2">
+          <span className="text-primary-600 mt-1">✔</span>
+          {t("clients_sectors_item2")}
+        </li>
+        <li className="flex items-start gap-2">
+          <span className="text-primary-600 mt-1">✔</span>
+          {t("clients_sectors_item3")}
+        </li>
+        <li className="flex items-start gap-2">
+          <span className="text-primary-600 mt-1">✔</span>
+          {t("clients_sectors_item4")}
+        </li>
+        <li className="flex items-start gap-2">
+          <span className="text-primary-600 mt-1">✔</span>
+          {t("clients_sectors_item5")}
+        </li>
+      </ul>
+    </div>
+              </div>
               <div
                 className="wp-block-column is-layout-flow wp-block-column-is-layout-flow"
                 style={{ flexBasis: "50%" }}
@@ -107,7 +149,7 @@ const page: React.FC = () => {
                     height={1920}
                     className="wp-block-cover__image-background wp-image-228"
                     alt=""
-                    src="https://images.unsplash.com/photo-1626366657705-84fb039744f7?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    src="https://images.unsplash.com/photo-1695349091016-502058873d14?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHNlY3RvcnN8ZW58MHx8MHx8fDA%3D"
                     style={{ objectFit: "cover" }}
                   />
                   <div className="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
@@ -117,45 +159,6 @@ const page: React.FC = () => {
                       className="wp-block-spacer"
                     ></div>
                   </div>
-                </div>
-              </div>
-
-              <div
-                className="wp-block-column is-layout-flow wp-block-column-is-layout-flow"
-                style={{
-                  paddingTop: "var(--wp--preset--spacing--40)",
-                  paddingBottom: "var(--wp--preset--spacing--40)",
-                  flexBasis: "50%",
-                }}
-              >
-                <div
-                  className="wp-block-group alignwide has-global-padding is-content-justification-left is-layout-constrained wp-container-core-group-is-layout-9 wp-block-group-is-layout-constrained"
-                  style={{ marginBottom: "var(--wp--preset--spacing--40)" }}
-                >
-                  <h2 className="wp-block-heading has-large-font-size">
-                    <strong>{t("who_we_are")}</strong>
-                  </h2>
-
-                  <p
-                    className="has-text-align-left"
-                    style={{ marginTop: "16px" }}
-                  >
-                    {t("who_we_are_desc1")}
-                  </p>
-
-                  <p
-                    className="has-text-align-left"
-                    style={{ marginTop: "16px" }}
-                  >
-                    {t("who_we_are_desc2")}
-                  </p>
-
-                  <p
-                    className="has-text-align-left"
-                    style={{ marginTop: "16px" }}
-                  >
-                    {t("who_we_are_desc3")}
-                  </p>
                 </div>
               </div>
             </div>
@@ -220,7 +223,7 @@ const page: React.FC = () => {
                           />
                         </figure>
 
-                        <p className="has-large-font-size">
+                        <p className="has-large-font-size text-center">
                           <strong>
                             <mark
                               style={{ backgroundColor: "rgba(0, 0, 0, 0)" }}

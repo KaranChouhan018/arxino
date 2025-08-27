@@ -36,12 +36,21 @@
   },
   "contact": {
     "title": "Contacto",
-    "info_title": "ponte en contacto",
+    "info_title": " onte en contacto",
     "address": "Dirección",
     "address_value": "C/ Velazquez 3, 3º, 28009 Madrid",
     "phone": "Teléfono",
     "email": "Email",
-    "description": "Le invitamos a solicitar un análisis de suministro sin compromiso, adaptado a sus necesidades"
+    "description": "Le invitamos a solicitar un análisis de suministro sin compromiso, adaptado a sus necesidades",
+    "faq_title": "FAQ (Preguntas Frecuentes)",
+    "faq1_question": "Qué tipo de combustibles comercializa DVX Ventures?",
+    "faq1_answer": "Intermediamos gasolina, diésel, fuelóleo, LPG, biocombustibles y petroquímicos industrializados.",
+    "faq2_question": "Trabajáis a escala internacional?",
+    "faq2_answer": "Sí, ofrecemos suministro en múltiples mercados europeos y globales.",
+    "faq3_question": "Cómo gestionáis la calidad y la conformidad normativa?",
+    "faq3_answer": "Aplicamos protocolos de inspección, documentación técnica y seguimiento regulatorio en cada operación.",
+    "faq4_question": "Cuál es el proceso para contratar vuestros servicios?",
+    "faq4_answer": "Complete el formulario de contacto o llámenos. Evaluaremos requisitos, presentaremos opciones y facilitarén el acuerdo y logística."
   },
   "sobre": {
     "hero_title": "Quiénes somos",
@@ -58,6 +67,13 @@
     "client_focused_desc": "Sus objetivos guían nuestra estrategia. Adaptamos soluciones a sus necesidades específicas, ofreciendo flexibilidad, respuesta rápida y soporte dedicado.",
     "sustainability_title": "Sostenibilidad en toda la cadena de suministro",
     "sustainability_desc": "Promovemos prácticas responsables de abastecimiento y logística, trabajando para reducir el impacto ambiental mientras mantenemos la eficiencia operativa.",
+    "clients_sectors_title": "CLIENTES Y SECTORES",
+    "clients_sectors_desc": "DVX Ventures atiende a una base de clientes diversa:",
+    "clients_sectors_item1": "Fabricantes industriales",
+    "clients_sectors_item2": "Operadores de transporte y logística",
+    "clients_sectors_item3": "Generadores de energía que requieren materia prima confiable",
+    "clients_sectors_item4": "Distribuidores y revendedores de combustible al por mayor",
+    "clients_sectors_item5": "Grandes usuarios comerciales e institucionales",
     "explore_services": "Explora nuestros servicios de comercio energético",
     "explore_services_desc": "Descubre soluciones eficientes y seguras para el comercio de combustibles. Benefíciate de nuestra red global, alianzas estratégicas y profundo conocimiento del mercado. Contáctanos hoy para recibir asesoramiento personalizado y soporte confiable.",
     "learn_more": "Más información",
@@ -87,6 +103,19 @@
   "gasoil_c_desc": "El Gasóleo C, también conocido como gasóleo de calefacción, está diseñado para sistemas de calefacción en sectores residenciales, comerciales e industriales. Es utilizado en calderas y hornos para la climatización de edificios y la generación de agua caliente. Además, encuentra aplicaciones en entornos agrícolas y ganaderos, como la calefacción de invernaderos y granjas. Su alto poder calorífico lo convierte en una opción eficiente y económica para satisfacer necesidades de calefacción intensiva.",
   "gasoline_95_desc": "La gasolina 95, conocida como gasolina sin plomo, es un combustible derivado del petróleo diseñado para motores de vehículos ligeros, como automóviles y motocicletas. Su octanaje garantiza un alto rendimiento, siendo ideal para motores estándar. Además, su composición reducida en compuestos contaminantes, como el plomo, favorece una combustión más limpia, contribuyendo a disminuir las emisiones y a proteger el medio ambiente, todo mientras asegura una conducción eficiente y confiable.",
   "trust_experience": "Confía en nuestra experiencia",
-  "discover_range": "En Dux Ventures, nos especializamos en soluciones de comercio de combustibles adaptadas a las demandas dinámicas del mercado energético global. Confíe en nuestro conocimiento del sector y enfoque estratégico para navegar la oferta y la demanda con confianza."
+  "discover_range": "En Dux Ventures, nos especializamos en soluciones de comercio de combustibles adaptadas a las demandas dinámicas del mercado energético global. Confíe en nuestro conocimiento del sector y enfoque estratégico para navegar la oferta y la demanda con confianza.",
+  "how_it_works_title": "CÓMO FUNCIONA",
+  "how_it_works_subtitle": "CÓMO FUNCIONA",
+  "how_it_works_desc": "Ofrecemos actualizaciones del mercado, análisis de riesgos y seguimiento operativo durante todo el período del contrato.",
+  "needs_title": "1. Entender sus necesidades",
+  "needs_desc": "Indíquenos su tipo de combustible, volumen, frecuencia de entrega, especificaciones de calidad y métodos logísticos preferidos.",
+  "market_study_title": "2. Estudio de mercado y propuesta",
+  "market_study_desc": "Analizamos las condiciones actuales del mercado y presentamos opciones de abastecimiento a medida (contratos spot, a corto plazo, a plazo).",
+  "negotiation_title": "3. Negociación y ejecución de contratos",
+  "negotiation_desc": "Nos encargamos de las negociaciones, la ejecución de las operaciones y todos los acuerdos contractuales para asegurar su suministro.",
+  "logistics_title": "4. Coordinación logística",
+  "logistics_desc": "Gestionamos toda la cadena de entrega: programación, transporte, almacenamiento, inspección y facturación.",
+  "support_title": "5. Soporte continuo",
+  "support_desc": "Proporcionamos actualizaciones del mercado, información sobre riesgos y seguimiento operativo durante todo el período del contrato."
 }
 }

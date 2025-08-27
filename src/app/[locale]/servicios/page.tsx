@@ -6,8 +6,20 @@ import { useTranslations } from "next-intl";
 
 const page: React.FC = () => {
   const t = useTranslations("servicios");
-    // Next.js App Router does not provide locale directly, so fallback to window or default
-  const locale = typeof window !== 'undefined' ? window.location.pathname.split('/')[1] : 'es';
+  // Next.js App Router does not provide locale directly, so fallback to window or default
+  const locale =
+    typeof window !== "undefined"
+      ? window.location.pathname.split("/")[1]
+      : "es";
+
+      const steps = [
+    { title: t("needs_title"), desc: t("needs_desc") },
+    { title: t("market_study_title"), desc: t("market_study_desc") },
+    { title: t("negotiation_title"), desc: t("negotiation_desc") },
+    { title: t("logistics_title"), desc: t("logistics_desc") },
+    { title: t("support_title"), desc: t("support_desc") },
+  ];
+
   return (
     <>
       <Header />
@@ -223,280 +235,79 @@ const page: React.FC = () => {
               </div>
             </div>
           </div>
-          <div
-            className="wp-block-group alignfull has-background-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-22 wp-block-group-is-layout-constrained"
-            style={{
-              marginTop: 0,
-              marginBottom: 0,
-              paddingTop: "var(--wp--preset--spacing--60)",
-              paddingRight: "var(--wp--preset--spacing--30)",
-              paddingBottom: "var(--wp--preset--spacing--60)",
-              paddingLeft: "var(--wp--preset--spacing--30)",
-            }}
-          >
-            <div className="wp-block-group alignwide has-global-padding is-content-justification-left is-layout-constrained wp-container-core-group-is-layout-13 wp-block-group-is-layout-constrained">
-              <h2 className="!inline-block wp-block-heading has-large-font-size">
-                {t("products")}
-              </h2>
-              <p style={{ marginTop: 16 }} className="!mx-0">
-                {t("trusted_source")}
-              </p>
-            </div>
-            <div
-              className="wp-block-group alignwide has-tertiary-background-color has-background is-layout-flex wp-block-group-is-layout-flex"
-              style={{
-                borderRadius: 4,
-                paddingTop: 0,
-                paddingRight: 0,
-                paddingBottom: 0,
-                paddingLeft: 0,
-              }}
-            >
-              <div
-                className="wp-block-cover wp-container-content-2"
-                style={{
-                  paddingRight: "var(--wp--preset--spacing--80)",
-                  paddingLeft: "var(--wp--preset--spacing--80)",
-                  minHeight: 269,
-                  aspectRatio: "unset",
-                }}
-              >
-                <span
-                  aria-hidden="true"
-                  className="wp-block-cover__background has-background-dim-0 has-background-dim"
-                  style={{ backgroundColor: "#74504a" }}
-                ></span>
-                <Image
-                  decoding="async"
-                  width={2560}
-                  height={1707}
-                  className="wp-block-cover__image-background wp-image-439"
-                  alt=""
-                  src="https://images.unsplash.com/photo-1580668304124-945a763a7442?q=80&w=867&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  sizes="(max-width: 2560px) 100vw, 2560px"
-                />
-                <div className="wp-block-cover__inner-container has-global-padding is-layout-constrained wp-container-core-cover-is-layout-3 wp-block-cover-is-layout-constrained">
-                  <div
-                    style={{ height: 200, width: 0 }}
-                    aria-hidden="true"
-                    className="wp-block-spacer"
-                  ></div>
-                </div>
-              </div>
-              <div
-                className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained"
-                style={{
-                  paddingTop: "var(--wp--preset--spacing--40)",
-                  paddingBottom: "var(--wp--preset--spacing--40)",
-                }}
-              >
-                <h3
-                  className="wp-block-heading"
-                  style={{
-                    fontSize:
-                      "clamp(1.119rem, 1.119rem + ((1vw - 0.2rem) * 1.052), 1.75rem)",
-                    lineHeight: 1.5,
-                  }}
-                >
-                  <strong>{t("gasoil_a")}</strong>
-                </h3>
-                <p className="has-small-font-size" style={{ marginTop: 12 }}>
-                  {t("gasoil_a_desc")}
+          <div className="bg-white w-[100%] your-grid-class  py-10 sm:py-12">
+            <div className=" px-6 lg:px-8 w-[100%] mx-auto">
+              <div className=" lg:text-center">
+                <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                  {t("how_it_works_title")}
+                </p>
+                <p className="mt-6 text-lg leading-8 text-gray-600">
+                  {t("how_it_works_desc")}
                 </p>
               </div>
-            </div>
-            <div
-              className="wp-block-group alignwide has-tertiary-background-color has-background is-layout-flex wp-block-group-is-layout-flex"
-              style={{
-                borderRadius: 4,
-                paddingTop: 0,
-                paddingRight: 0,
-                paddingBottom: 0,
-                paddingLeft: 0,
-              }}
-            >
-              <div
-                className="wp-block-cover wp-container-content-2"
-                style={{
-                  paddingRight: "var(--wp--preset--spacing--80)",
-                  paddingLeft: "var(--wp--preset--spacing--80)",
-                  minHeight: 269,
-                  aspectRatio: "unset",
-                }}
-              >
-                <span
-                  aria-hidden="true"
-                  className="wp-block-cover__background has-background-dim-0 has-background-dim"
-                  style={{ backgroundColor: "#74504a" }}
-                ></span>
-                <Image
-                  decoding="async"
-                  width={2560}
-                  height={1707}
-                  className="wp-block-cover__image-background wp-image-439"
-                  alt=""
-                  src="https://images.unsplash.com/photo-1580668304124-945a763a7442?q=80&w=867&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  sizes="(max-width: 2560px) 100vw, 2560px"
-                />
-                <div className="wp-block-cover__inner-container has-global-padding is-layout-constrained wp-container-core-cover-is-layout-3 wp-block-cover-is-layout-constrained">
-                  <div
-                    style={{ height: 200, width: 0 }}
-                    aria-hidden="true"
-                    className="wp-block-spacer"
-                  ></div>
-                </div>
-              </div>
-              <div
-                className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained"
-                style={{
-                  paddingTop: "var(--wp--preset--spacing--40)",
-                  paddingBottom: "var(--wp--preset--spacing--40)",
-                }}
-              >
-                <h3
-                  className="wp-block-heading"
-                  style={{
-                    fontSize:
-                      "clamp(1.119rem, 1.119rem + ((1vw - 0.2rem) * 1.052), 1.75rem)",
-                    lineHeight: 1.5,
-                  }}
-                >
-                  <strong>{t("gasoil_b")}</strong>
-                </h3>
-                <p className="has-small-font-size" style={{ marginTop: 12 }}>
-                  {t("gasoil_b_desc")}
-                </p>
-              </div>
-            </div>
-            <div
-              className="wp-block-group alignwide has-tertiary-background-color has-background is-layout-flex wp-block-group-is-layout-flex"
-              style={{
-                borderRadius: 4,
-                paddingTop: 0,
-                paddingRight: 0,
-                paddingBottom: 0,
-                paddingLeft: 0,
-              }}
-            >
-              <div
-                className="wp-block-cover wp-container-content-3"
-                style={{
-                  paddingRight: "var(--wp--preset--spacing--80)",
-                  paddingLeft: "var(--wp--preset--spacing--80)",
-                  minHeight: 303,
-                  aspectRatio: "unset",
-                }}
-              >
-                <span
-                  aria-hidden="true"
-                  className="wp-block-cover__background has-background-dim-0 has-background-dim"
-                  style={{ backgroundColor: "#596f7b" }}
-                ></span>
-                <Image
-                  loading="lazy"
-                  decoding="async"
-                  width={2560}
-                  height={1920}
-                  className="wp-block-cover__image-background wp-image-442"
-                  alt=""
-                  src="https://images.unsplash.com/photo-1580668304124-945a763a7442?q=80&w=867&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  sizes="(max-width: 2560px) 100vw, 2560px"
-                />
-                <div className="wp-block-cover__inner-container has-global-padding is-layout-constrained wp-container-core-cover-is-layout-4 wp-block-cover-is-layout-constrained">
-                  <div
-                    style={{ height: 200, width: 0 }}
-                    aria-hidden="true"
-                    className="wp-block-spacer"
-                  ></div>
-                </div>
-              </div>
-              <div
-                className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained"
-                style={{
-                  paddingTop: "var(--wp--preset--spacing--40)",
-                  paddingBottom: "var(--wp--preset--spacing--40)",
-                }}
-              >
-                <h3
-                  className="wp-block-heading"
-                  style={{
-                    fontSize:
-                      "clamp(1.119rem, 1.119rem + ((1vw - 0.2rem) * 1.052), 1.75rem)",
-                    lineHeight: 1.5,
-                  }}
-                >
-                  <strong>{t("gasoil_c")}</strong>
-                </h3>
-                <p className="has-small-font-size" style={{ marginTop: 12 }}>
-                  {t("gasoil_c_desc")}
-                </p>
-              </div>
-            </div>
-            <div
-              className="wp-block-group alignwide has-tertiary-background-color has-background is-layout-flex wp-block-group-is-layout-flex"
-              style={{
-                borderRadius: 4,
-                paddingTop: 0,
-                paddingRight: 0,
-                paddingBottom: 0,
-                paddingLeft: 0,
-              }}
-            >
-              <div
-                className="wp-block-cover is-light wp-container-content-4"
-                style={{
-                  paddingRight: "var(--wp--preset--spacing--80)",
-                  paddingLeft: "var(--wp--preset--spacing--80)",
-                  minHeight: 304,
-                  aspectRatio: "unset",
-                }}
-              >
-                <span
-                  aria-hidden="true"
-                  className="wp-block-cover__background has-background-dim-0 has-background-dim"
-                  style={{ backgroundColor: "#8b8e8c" }}
-                ></span>
-                <Image
-                  loading="lazy"
-                  decoding="async"
-                  width={2505}
-                  height={2560}
-                  className="wp-block-cover__image-background wp-image-441"
-                  alt=""
-                  src="https://images.unsplash.com/photo-1580668304124-945a763a7442?q=80&w=867&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  sizes="(max-width: 2505px) 100vw, 2505px"
-                />
-                <div className="wp-block-cover__inner-container has-global-padding is-layout-constrained wp-container-core-cover-is-layout-5 wp-block-cover-is-layout-constrained">
-                  <div
-                    style={{ height: 200, width: 0 }}
-                    aria-hidden="true"
-                    className="wp-block-spacer"
-                  ></div>
-                </div>
-              </div>
-              <div
-                className="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained"
-                style={{
-                  paddingTop: "var(--wp--preset--spacing--40)",
-                  paddingBottom: "var(--wp--preset--spacing--40)",
-                }}
-              >
-                <h3
-                  className="wp-block-heading"
-                  style={{
-                    fontSize:
-                      "clamp(1.119rem, 1.119rem + ((1vw - 0.2rem) * 1.052), 1.75rem)",
-                    lineHeight: 1.5,
-                  }}
-                >
-                  <strong>{t("gasoline_95")}</strong>
-                </h3>
-                <p className="has-small-font-size" style={{ marginTop: 12 }}>
-                  {t("gasoline_95_desc")}
-                </p>
+              <div className="mx-auto mt-16 max-w-6xl sm:mt-20 lg:mt-24 ">
+                <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+                  <div className="relative pl-16">
+                    <dt className="text-base font-semibold leading-7 text-gray-900">
+                      <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-gray-400">
+                        <p className="text-white">1</p>
+                      </div>
+                      {t("needs_title")}
+                    </dt>
+                    <dd className="mt-2 text-base leading-7 text-gray-600">
+                      {t("needs_desc")}
+                    </dd>
+                  </div>
+                  <div className="relative pl-16">
+                    <dt className="text-base font-semibold leading-7 text-gray-900">
+                      <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-gray-400">
+                        <p className="text-white">2</p>
+                      </div>
+                      {t("market_study_title")}
+                    </dt>
+                    <dd className="mt-2 text-base leading-7 text-gray-600">
+                      {t("market_study_desc")}
+                    </dd>
+                  </div>
+                  <div className="relative pl-16">
+                    <dt className="text-base font-semibold leading-7 text-gray-900">
+                      <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-gray-400">
+                        <p className="text-white">3</p>
+                      </div>
+                      {t("negotiation_title")}
+                    </dt>
+                    <dd className="mt-2 text-base leading-7 text-gray-600">
+                      {t("negotiation_desc")}
+                    </dd>
+                  </div>
+                  <div className="relative pl-16">
+                    <dt className="text-base font-semibold leading-7 text-gray-900">
+                      <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-gray-400">
+                        <p className="text-white">4</p>
+                      </div>
+                      {t("logistics_title")}
+                    </dt>
+                    <dd className="mt-2 text-base leading-7 text-gray-600">
+                      {t("logistics_desc")}
+                    </dd>
+                  </div>
+                  <div className="relative pl-16">
+                    <dt className="text-base font-semibold leading-7 text-gray-900">
+                      <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-gray-400">
+                        <p className="text-white">5</p>
+                      </div>
+                      {t("support_title")}
+                    </dt>
+                    <dd className="mt-2 text-base leading-7 text-gray-600">
+                      {t("support_desc")}
+                    </dd>
+                  </div>
+                </dl>
               </div>
             </div>
           </div>
+     
+
           <div
             className="wp-block-cover alignfull has-parallax"
             style={{

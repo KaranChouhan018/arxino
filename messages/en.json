@@ -41,7 +41,16 @@
     "address_value": "C/ Velazquez 3, 3º, 28009 Madrid",
     "phone": "Phone",
     "email": "Email",
-    "description": "We invite you to request a no‐obligation supply analysis tailored to your needs"
+    "description": "We invite you to request a no‐obligation supply analysis tailored to your needs",
+    "faq_title": "FAQ (Frequently Asked Questions)",
+    "faq1_question": "What type of fuels does DVX Ventures trade?",
+    "faq1_answer": "We broker gasoline, diesel, fuel oil, LPG, biofuels, and industrialized petrochemicals.",
+    "faq2_question": "Do you work internationally?",
+    "faq2_answer": "Yes, we offer supply in multiple European and global markets.",
+    "faq3_question": "How do you manage quality and regulatory compliance?",
+    "faq3_answer": "We apply inspection protocols, technical documentation, and regulatory monitoring in every operation.",
+    "faq4_question": "What is the process for hiring your services?",
+    "faq4_answer": "Complete the contact form or call us. We will evaluate requirements, present options, and facilitate the agreement and logistics."
   },
   "sobre": {
     "hero_title": "Who We Are",
@@ -58,6 +67,13 @@
     "client_focused_desc": "Your goals drive our strategy. We tailor solutions to your specific needs, offering flexibility, responsiveness, and dedicated support.",
     "sustainability_title": "Sustainability Throughout the Supply Chain",
     "sustainability_desc": "We promote responsible sourcing and logistics practices, working to reduce environmental impact while maintaining operational efficiency.",
+    "clients_sectors_title": "CLIENTS & SECTORS",
+    "clients_sectors_desc": "DVX Ventures serves a diverse client base:",
+    "clients_sectors_item1": "Industrial manufacturers",
+    "clients_sectors_item2": "Transport and logistics operators",
+    "clients_sectors_item3": "Energy generators requiring reliable feedstock",
+    "clients_sectors_item4": "Wholesale fuel distributors and resellers",
+    "clients_sectors_item5": "Large commercial and institutional users",
     "explore_services": "Our Reach",
     "explore_services_desc": "With an international footprint and a trusted network of suppliers and operators, we manage end-to-end fuel delivery globally.",
     "learn_more": "Learn More",
@@ -88,6 +104,19 @@
   "gasoil_c_desc": "Diesel C, also known as heating oil, is designed for heating systems in residential, commercial, and industrial sectors. It is used in boilers and furnaces for building climate control and hot water generation. It is also used in agricultural and livestock environments, such as greenhouse and farm heating. Its high calorific value makes it an efficient and economical option for intensive heating needs.",
   "gasoline_95_desc": "Gasoline 95, known as unleaded gasoline, is a petroleum-derived fuel designed for light vehicle engines such as cars and motorcycles. Its octane rating ensures high performance, making it ideal for standard engines. Its reduced content of polluting compounds, such as lead, promotes cleaner combustion, helping to reduce emissions and protect the environment, while ensuring efficient and reliable driving.",
   "trust_experience": "Trust in Our Expertise",
-  "discover_range": "At Dux Ventures, we specialize in fuel trading solutions tailored to meet the dynamic demands of the global energy market. Rely on our industry insight and strategic approach to navigate supply and demand with confidence."
+  "discover_range": "At Dux Ventures, we specialize in fuel trading solutions tailored to meet the dynamic demands of the global energy market. Rely on our industry insight and strategic approach to navigate supply and demand with confidence.",
+  "how_it_works_title": "HOW IT WORKS",
+  "how_it_works_subtitle": "HOW IT WORKS",
+  "how_it_works_desc": "We provide market updates, risk insight, and operational monitoring throughout the contract period.",
+  "needs_title": " Understanding Your Needs",
+  "needs_desc": "Tell us your fuel type, volume, delivery frequency, quality specs, and preferred logistics methods.",
+  "market_study_title": "Market Study & Proposal",
+  "market_study_desc": "We analyze current market conditions and present tailored sourcing options (spot, short-term, term contracts).",
+  "negotiation_title": " Negotiation & Contract Execution",
+  "negotiation_desc": "We handle negotiations, trade execution, and all contractual arrangements to secure your supply.",
+  "logistics_title": " Logistics Coordination",
+  "logistics_desc": "We manage the full delivery chain—scheduling, transport, warehousing, inspection, and invoicing.",
+  "support_title": " Ongoing Support",
+  "support_desc": "We provide market updates, risk insight, and operational monitoring throughout the contract period."
 }
 }
